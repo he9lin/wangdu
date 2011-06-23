@@ -1,0 +1,10 @@
+/[if lt IE 7]
+  .ie_upgrade
+    ~ link_to(image_tag("http://www.theie6countdown.com/images/upgrade.jpg"), "http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode")
+#header
+  .logo
+  .title
+    %h3~ "成都万都航空"
+    .phone~ "订票电话: (028) 87063333"
+  %ul.main_nav
+    %li= smart_link_to '主页', root_path

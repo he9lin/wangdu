@@ -1,0 +1,70 @@
+$blueprint-grid-columns: 48;
+$blueprint-container-size: 960px;
+$blueprint-grid-margin: 5px;
+$blueprint-grid-width: ($blueprint-container-size + $blueprint-grid-margin) / $blueprint-grid-columns - $blueprint-grid-margin;
+
+@import "compass/reset";
+@import "compass/utilities";
+@import "blueprint";
+@import "compass/css3/text-shadow";
+@import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
+@import "compass/css3/gradient";
+@import "compass/css3/opacity";
+
+@import "blueprint";
+@import "blueprint/scaffolding";
+
+body {
+  @include blueprint-typography(true);
+  @include blueprint-utilities;
+  @include blueprint-debug;
+  @include blueprint-interaction; }
+
+@import "compass/typography";
+
+//Colors
+$font-color: #555;
+$base-color: #777;
+$loudish-color: #707070;
+$quiet-color: #A0A0A0;
+
+$sky-color: #4DA9C2;
+$skyer-color: darken($sky-color, 10%);
+$skyish-color: lighten($sky-color, 10%);
+
+$blueprint-background-color: #F5F5F5;
+$blueprint-table-stripe-color: #F2F2F2;
+
+$border-color: #909090;
+$light-border-color: #E6E6E6;
+$grey-border-color: #E6E6E6;
+
+$text-color: #09c;
+$cafee-color: #754c24;
+$green-color: #8FC644;
+$blue-color: #56CDED;
+$blue-text-color: #0791ca;
+$light-blue-color: #80c4e5;
+$lighter-blue-color: #A8DCFB;
+$blue-bg-color: #eaf7ff;
+$red-color: #E94D27;
+$dark-red-color: #A3620A;
+$orange-color: #FA9900;
+$link-color: $orange-color;
+$light-blue-bg-color: #dbf1fe;
+
+$form-font-color: #7794AA;
+$form-input-border-color: #b2c4d4;
+$form-error-color: #4da9c2;
+$form-input-thick-border-color: #e4eaee;
+
+$popup-border-color: #333;
+$user-panel-bg-color: #333;
+$merchant-panel-bg-color: #402817;
+$announce-day-color-one: #c1d837;
+$announce-day-color-two: #80c4e5;
+ 
+$blueprint-font-family: "Helvetica Neve",Helvetica,Tahoma,Arial,Verdana,"Hiragino Sans GB",sans-serif;
+
+$theme-bg-color: #35414F;

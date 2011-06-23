@@ -1,0 +1,7 @@
+.search_result{:id => "#{type}_flights"}
+  - if @flights && @flights.send(type)
+    ~ flight_info_dto(@flights, type)
+    ~ flight_dates(@flights, type)
+    ~ simple_table(",航空公司/机型,航班号,起降时间,机场,经停,舱位,最低价,详情", :class=>"ui-widget ui-widget-content") do
+      - @flights.send(type).each do |flight|
+        ~ row_flight(flight)

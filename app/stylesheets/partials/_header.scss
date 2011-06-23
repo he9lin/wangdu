@@ -1,0 +1,43 @@
+#container #header {
+  .logo { 
+		height: 100px; 
+		width: 155px; 
+		float: left; 
+		background: url(/images/logo.png) no-repeat; }
+	.title{
+		padding: 15px 0 0 180px;
+		h3{ 
+			margin: 0;
+			font-size: 3.0em;
+			font-weight: bold; }
+		.phone{ 
+			padding-left: 5px; 
+			font-size: 1.8em;  
+			color: $dark-red-color; } }
+  ul.main_nav {
+		clear: left; 
+    height: 35px;
+    background: url(/images/lines.png) 0 -162px repeat-x;
+    @include horizontal-list;
+    padding: 0 30px;
+    li {
+      margin-top: 3px;
+      overflow: visible;
+      font-size: 1.2em;
+      padding: 3px 8px;
+      a {
+        @include hover-link;
+        color: white;
+        display: inline-block; }
+      span.current {
+        background-color: white;
+        color: $text-color;
+        height: 30px;
+        display: inline-block;
+        span.inner {
+          border-left: 1px solid $border-color;
+          border-top: 1px solid $border-color;
+          border-right: 1px solid $border-color;
+          display: inline-block;
+          height: 23px;
+          padding: 0 10px; } } } } }
