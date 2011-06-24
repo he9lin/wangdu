@@ -1,43 +1,66 @@
 #container #header {
-  .logo { 
-		height: 100px; 
-		width: 155px; 
-		float: left; 
-		background: url(/images/logo.png) no-repeat; }
-	.title{
-		padding: 15px 0 0 180px;
-		h3{ 
-			margin: 0;
-			font-size: 3.0em;
-			font-weight: bold; }
-		.phone{ 
-			padding-left: 5px; 
-			font-size: 1.8em;  
-			color: $dark-red-color; } }
-  ul.main_nav {
-		clear: left; 
-    height: 35px;
-    background: url(/images/lines.png) 0 -162px repeat-x;
-    @include horizontal-list;
-    padding: 0 30px;
-    li {
-      margin-top: 3px;
-      overflow: visible;
-      font-size: 1.2em;
-      padding: 3px 8px;
-      a {
-        @include hover-link;
-        color: white;
-        display: inline-block; }
-      span.current {
-        background-color: white;
-        color: $text-color;
-        height: 30px;
-        display: inline-block;
-        span.inner {
-          border-left: 1px solid $border-color;
-          border-top: 1px solid $border-color;
-          border-right: 1px solid $border-color;
-          display: inline-block;
-          height: 23px;
-          padding: 0 10px; } } } } }
+	.top_header{  
+		height: 125px;
+		border-bottom: 2px solid $blue-border-color;
+	  .logo { 
+			height: 125px; 
+			width: 150px; 
+			float: left; 
+			background: url(/images/logo-pic.png) no-repeat; }
+		.title_header{
+			padding: 15px 0 0 160px;
+			position: relative;
+			h3{ 
+				height: 47px;
+				background: url(/images/title.gif) no-repeat; }
+			a.help{
+				width: 135px;
+				height: 22px;
+				background: url(/images/help.gif) no-repeat; 
+				position: absolute;
+				top: 20px;
+				left: 800px; }
+			.phone{ 
+				padding-left: 5px; 
+				font-size: 1.8em;  
+				color: $dark-red-color;
+				.tel{ float: left; color: $lighterer-blue-color; }
+				.number{ color: $light-orange-color; padding-left: 110px; } } } }
+	.flight_search{
+		border-bottom: 1px solid $blue-border-color;
+		background: url(/images/logo-pic.png) no-repeat;
+		height: 80px;
+		background-position-y: -150px;
+		form#form_search_flights{
+			margin-left: 130px;
+			font-size: 1.2em;
+			font-weight: bold;
+			.flight_type{ 
+				float: left; 
+				width: 63px;
+				height: 80px;
+				border-right: 1px solid $blue-border-color;
+				label, input{ line-height: 30px; margin-top: 15px;} }
+			.types{	
+				margin-left: 10px; 
+				width: 210px;
+				height: 80px; 
+				float: left;
+				.direct_flag{ line-height: 40px; }
+				.company{ } }
+			.submit_button{ 
+				height: 80px; 
+				margin-left: 715px;
+				border-left: 1px solid $blue-border-color; 
+				input[type="submit"]{ margin: 25px; } }
+			.schedule{ 
+				width: 425px;
+				height: 80px;
+				float: left;
+				padding-left: 10px; 
+				border-right: 1px solid $blue-border-color; }
+			input[type="text"]{ 
+				background-color: $light-blue-bg-color;
+				width: 118px; 
+				height: 24px;
+				margin: 5px;  } } } }

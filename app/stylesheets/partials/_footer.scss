@@ -1,3 +1,22 @@
 #container #footer {
 	text-align: center;
-	background-color: $lighter-blue-color; }
+	line-height: 34px;
+	height: 34px;
+	background-color: $regular-blue-bg-color;
+	font-size: 1.2em;
+	color: white;
+	a{ 
+		color: white;
+		text-decoration: none; 
+		margin-left: 10px; 
+		&:hover{ } }
+	.copyright{ float: left; margin-left: 10px; } 
+	.design{ 
+		float: right; margin-right: 20px;
+		.span{ }
+		.logo{  
+			margin: 7px 5px 0 0;
+			height: 20px; 
+			width: 20px; 
+			float: left; 
+			background: url(/images/heyook.gif) no-repeat;}}  }

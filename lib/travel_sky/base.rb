@@ -36,6 +36,9 @@ module TravelSky
     
     def self.response_body(params)
       HTTParty.get(url(params)).body
+    rescue Errno::ETIMEDOUT => ee
+      Rails.logger.info("Travelsky.com request timed out! at #{Time.now}")
+      nil
     end
     
   end

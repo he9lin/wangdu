@@ -1,9 +1,0 @@
-body.home {
-  #container {
-    @include container; }
-  #header, #footer {
-    @include column($blueprint-grid-columns); }
-  #sidebar {
-    @include column(9.5); }
-  #content {
-    @include column(35.5, true); } }

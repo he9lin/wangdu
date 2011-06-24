@@ -384,143 +384,160 @@ body .removed {
   color: white;
 }
 
-/* line 2, ../../app/stylesheets/partials/_layouts.scss */
-body.home #container {
-  width: 960px;
-  margin: 0 auto;
-  overflow: hidden;
-  *zoom: 1;
-}
-/* line 4, ../../app/stylesheets/partials/_layouts.scss */
-body.home #header, body.home #footer {
-  display: inline;
-  float: left;
-  margin-right: 5px;
-  width: 960px;
-}
-/* line 147, ../../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.home #header, * html body.home #footer {
-  overflow-x: hidden;
-}
-/* line 6, ../../app/stylesheets/partials/_layouts.scss */
-body.home #sidebar {
-  display: inline;
-  float: left;
-  margin-right: 5px;
-  width: 185.99px;
-}
-/* line 147, ../../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.home #sidebar {
-  overflow-x: hidden;
-}
-/* line 8, ../../app/stylesheets/partials/_layouts.scss */
-body.home #content {
-  display: inline;
-  float: left;
-  margin-right: 0;
-  width: 708.698px;
-}
-/* line 147, ../../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.home #content {
-  overflow-x: hidden;
-}
-
 /* line 2, ../../app/stylesheets/partials/_header.scss */
-#container #header .logo {
-  height: 100px;
-  width: 155px;
+#container #header .top_header {
+  height: 125px;
+  border-bottom: 2px solid #6fa8cc;
+}
+/* line 5, ../../app/stylesheets/partials/_header.scss */
+#container #header .top_header .logo {
+  height: 125px;
+  width: 150px;
   float: left;
-  background: url(/images/logo.png) no-repeat;
+  background: url(/images/logo-pic.png) no-repeat;
 }
-/* line 7, ../../app/stylesheets/partials/_header.scss */
-#container #header .title {
-  padding: 15px 0 0 180px;
-}
-/* line 9, ../../app/stylesheets/partials/_header.scss */
-#container #header .title h3 {
-  margin: 0;
-  font-size: 3.0em;
-  font-weight: bold;
+/* line 10, ../../app/stylesheets/partials/_header.scss */
+#container #header .top_header .title_header {
+  padding: 15px 0 0 160px;
+  position: relative;
 }
 /* line 13, ../../app/stylesheets/partials/_header.scss */
-#container #header .title .phone {
+#container #header .top_header .title_header h3 {
+  height: 47px;
+  background: url(/images/title.gif) no-repeat;
+}
+/* line 16, ../../app/stylesheets/partials/_header.scss */
+#container #header .top_header .title_header a.help {
+  width: 135px;
+  height: 22px;
+  background: url(/images/help.gif) no-repeat;
+  position: absolute;
+  top: 20px;
+  left: 800px;
+}
+/* line 23, ../../app/stylesheets/partials/_header.scss */
+#container #header .top_header .title_header .phone {
   padding-left: 5px;
   font-size: 1.8em;
   color: #a3620a;
 }
-/* line 17, ../../app/stylesheets/partials/_header.scss */
-#container #header ul.main_nav {
-  clear: left;
-  height: 35px;
-  background: url(/images/lines.png) 0 -162px repeat-x;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  overflow: hidden;
-  *zoom: 1;
-  padding: 0 30px;
-}
-/* line 60, ../../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-#container #header ul.main_nav li {
-  list-style-image: none;
-  list-style-type: none;
-  margin-left: 0px;
-  white-space: nowrap;
-  display: inline;
+/* line 27, ../../app/stylesheets/partials/_header.scss */
+#container #header .top_header .title_header .phone .tel {
   float: left;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-/* line 48, ../../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-#container #header ul.main_nav li:first-child, #container #header ul.main_nav li.first {
-  padding-left: 0;
-}
-/* line 49, ../../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-#container #header ul.main_nav li:last-child {
-  padding-right: 0;
-}
-/* line 50, ../../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-#container #header ul.main_nav li.last {
-  padding-right: 0;
-}
-/* line 23, ../../app/stylesheets/partials/_header.scss */
-#container #header ul.main_nav li {
-  margin-top: 3px;
-  overflow: visible;
-  font-size: 1.2em;
-  padding: 3px 8px;
+  color: #72bfe9;
 }
 /* line 28, ../../app/stylesheets/partials/_header.scss */
-#container #header ul.main_nav li a {
-  text-decoration: none;
-  color: white;
-  display: inline-block;
+#container #header .top_header .title_header .phone .number {
+  color: #f47322;
+  padding-left: 110px;
 }
-/* line 4, ../../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
-#container #header ul.main_nav li a:hover {
-  text-decoration: underline;
+/* line 29, ../../app/stylesheets/partials/_header.scss */
+#container #header .flight_search {
+  border-bottom: 1px solid #6fa8cc;
+  background: url(/images/logo-pic.png) no-repeat;
+  height: 80px;
+  background-position-y: -150px;
 }
-/* line 32, ../../app/stylesheets/partials/_header.scss */
-#container #header ul.main_nav li span.current {
-  background-color: white;
-  color: #0099cc;
-  height: 30px;
-  display: inline-block;
+/* line 34, ../../app/stylesheets/partials/_header.scss */
+#container #header .flight_search form#form_search_flights {
+  margin-left: 130px;
+  font-size: 1.2em;
+  font-weight: bold;
 }
-/* line 37, ../../app/stylesheets/partials/_header.scss */
-#container #header ul.main_nav li span.current span.inner {
-  border-left: 1px solid #909090;
-  border-top: 1px solid #909090;
-  border-right: 1px solid #909090;
-  display: inline-block;
-  height: 23px;
-  padding: 0 10px;
+/* line 38, ../../app/stylesheets/partials/_header.scss */
+#container #header .flight_search form#form_search_flights .flight_type {
+  float: left;
+  width: 63px;
+  height: 80px;
+  border-right: 1px solid #6fa8cc;
+}
+/* line 43, ../../app/stylesheets/partials/_header.scss */
+#container #header .flight_search form#form_search_flights .flight_type label, #container #header .flight_search form#form_search_flights .flight_type input {
+  line-height: 30px;
+  margin-top: 15px;
+}
+/* line 44, ../../app/stylesheets/partials/_header.scss */
+#container #header .flight_search form#form_search_flights .types {
+  margin-left: 10px;
+  width: 210px;
+  height: 80px;
+  float: left;
+}
+/* line 49, ../../app/stylesheets/partials/_header.scss */
+#container #header .flight_search form#form_search_flights .types .direct_flag {
+  line-height: 40px;
+}
+/* line 51, ../../app/stylesheets/partials/_header.scss */
+#container #header .flight_search form#form_search_flights .submit_button {
+  height: 80px;
+  margin-left: 715px;
+  border-left: 1px solid #6fa8cc;
+}
+/* line 55, ../../app/stylesheets/partials/_header.scss */
+#container #header .flight_search form#form_search_flights .submit_button input[type="submit"] {
+  margin: 25px;
+}
+/* line 56, ../../app/stylesheets/partials/_header.scss */
+#container #header .flight_search form#form_search_flights .schedule {
+  width: 425px;
+  height: 80px;
+  float: left;
+  padding-left: 10px;
+  border-right: 1px solid #6fa8cc;
+}
+/* line 62, ../../app/stylesheets/partials/_header.scss */
+#container #header .flight_search form#form_search_flights input[type="text"] {
+  background-color: #dbf1fe;
+  width: 118px;
+  height: 24px;
+  margin: 5px;
 }
 
 /* line 1, ../../app/stylesheets/partials/_footer.scss */
 #container #footer {
   text-align: center;
-  background-color: #a8dcfb;
+  line-height: 34px;
+  height: 34px;
+  background-color: #108dcb;
+  font-size: 1.2em;
+  color: white;
+}
+/* line 8, ../../app/stylesheets/partials/_footer.scss */
+#container #footer a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+/* line 13, ../../app/stylesheets/partials/_footer.scss */
+#container #footer .copyright {
+  float: left;
+  margin-left: 10px;
+}
+/* line 14, ../../app/stylesheets/partials/_footer.scss */
+#container #footer .design {
+  float: right;
+  margin-right: 20px;
+}
+/* line 17, ../../app/stylesheets/partials/_footer.scss */
+#container #footer .design .logo {
+  margin: 7px 5px 0 0;
+  height: 20px;
+  width: 20px;
+  float: left;
+  background: url(/images/heyook.gif) no-repeat;
+}
+
+/* line 1, ../../app/stylesheets/partials/_help.scss */
+.helps {
+  margin: 30px;
+}
+/* line 4, ../../app/stylesheets/partials/_help.scss */
+.helps #help_left a.ui-button {
+  margin: 0 6px;
+}
+/* line 7, ../../app/stylesheets/partials/_help.scss */
+.helps #help_right {
+  margin: 15px 0 0 30px;
 }
 
 /* line 6, ../../app/stylesheets/screen.scss */
@@ -548,81 +565,82 @@ h3 {
 
 /* line 19, ../../app/stylesheets/screen.scss */
 #container {
-  border-left: 1px solid #e6e6e6;
-  border-right: 1px solid #e6e6e6;
-}
-
-/* line 22, ../../app/stylesheets/screen.scss */
-#content {
-  min-height: 570px;
-  padding-left: 12px;
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+  border-left: 2px solid #6fa8cc;
+  border-right: 2px solid #6fa8cc;
 }
 
 /* line 23, ../../app/stylesheets/screen.scss */
-#sidebar {
-  padding: 2px 0 0 8px;
-  border-right: 1px solid #e6e6e6;
-}
-/* line 26, ../../app/stylesheets/screen.scss */
-#sidebar form {
-  width: 195px;
+#content {
+  width: 900px;
+  min-height: 460px;
+  background: url(/images/map-bg-p.png) repeat-y top;
+  background-position: 30px;
 }
 
 /* line 29, ../../app/stylesheets/screen.scss */
 .search_result {
-  width: 700px;
+  width: 800px;
+  margin: 20px 80px;
 }
-
-/* line 31, ../../app/stylesheets/screen.scss */
-.simple_table {
+/* line 32, ../../app/stylesheets/screen.scss */
+.search_result #dto_header h3 {
+  font-weight: bold;
+  margin-left: 10px;
+}
+/* line 33, ../../app/stylesheets/screen.scss */
+.search_result .simple_table {
   clear: left;
   margin: 5px 10px 10px 0;
 }
-/* line 34, ../../app/stylesheets/screen.scss */
-.simple_table .header {
+/* line 36, ../../app/stylesheets/screen.scss */
+.search_result .simple_table .header {
   background-color: #f5f5f5;
 }
-/* line 35, ../../app/stylesheets/screen.scss */
-.simple_table tr.detail_flight td {
+/* line 37, ../../app/stylesheets/screen.scss */
+.search_result .simple_table tr.detail_flight td {
   background-color: #eaf7ff;
   color: #a3620a;
 }
-/* line 38, ../../app/stylesheets/screen.scss */
-.simple_table tr.detail_flight td ul li {
+/* line 40, ../../app/stylesheets/screen.scss */
+.search_result .simple_table tr.detail_flight td ul li {
   float: left;
   margin: 0 10px;
   list-style-type: none;
 }
-/* line 40, ../../app/stylesheets/screen.scss */
-.simple_table td.airline {
-  width: 100px;
-}
-/* line 41, ../../app/stylesheets/screen.scss */
-.simple_table td.airport {
+/* line 42, ../../app/stylesheets/screen.scss */
+.search_result .simple_table td.airline {
   width: 100px;
 }
 /* line 43, ../../app/stylesheets/screen.scss */
-.simple_table td span.price {
+.search_result .simple_table td.airport {
+  width: 100px;
+}
+/* line 45, ../../app/stylesheets/screen.scss */
+.search_result .simple_table td span.price {
   color: #a3620a;
   font-weight: bold;
 }
-/* line 44, ../../app/stylesheets/screen.scss */
-.simple_table td span.discount {
+/* line 46, ../../app/stylesheets/screen.scss */
+.search_result .simple_table td span.discount {
   color: #8fc644;
 }
 
-/* line 46, ../../app/stylesheets/screen.scss */
+/* line 48, ../../app/stylesheets/screen.scss */
 #cities_tabs {
   width: 320px;
   height: 200px;
   clear: left;
 }
-/* line 50, ../../app/stylesheets/screen.scss */
+/* line 52, ../../app/stylesheets/screen.scss */
 #cities_tabs .city_selects {
   padding: 0;
   margin: 0;
 }
-/* line 53, ../../app/stylesheets/screen.scss */
+/* line 55, ../../app/stylesheets/screen.scss */
 #cities_tabs .city_selects .city_select {
   cursor: pointer;
   float: left;
@@ -632,45 +650,40 @@ h3 {
   width: 50px;
 }
 
-/* line 62, ../../app/stylesheets/screen.scss */
-form#form_search_flights input[type="text"] {
-  width: 110px;
-}
-
-/* line 65, ../../app/stylesheets/screen.scss */
+/* line 63, ../../app/stylesheets/screen.scss */
 .flight_dates {
   height: 55px;
 }
-/* line 67, ../../app/stylesheets/screen.scss */
+/* line 65, ../../app/stylesheets/screen.scss */
 .flight_dates .flight_date {
   float: left;
-  padding: 0 28px;
+  padding: 0 32px;
   margin: 0 1px;
   background-color: #eaf7ff;
   cursor: pointer;
   border: 1px solid #80c4e5;
 }
-/* line 74, ../../app/stylesheets/screen.scss */
+/* line 72, ../../app/stylesheets/screen.scss */
 .flight_dates .flight_date:hover {
   background-color: #a8dcfb;
 }
-/* line 75, ../../app/stylesheets/screen.scss */
+/* line 73, ../../app/stylesheets/screen.scss */
 .flight_dates .flight_date.current {
   background-color: #80c4e5;
   border-bottom: none;
 }
-/* line 78, ../../app/stylesheets/screen.scss */
+/* line 76, ../../app/stylesheets/screen.scss */
 .flight_dates .flight_date p.year {
   visibility: hidden;
   height: 0px;
 }
-/* line 79, ../../app/stylesheets/screen.scss */
+/* line 77, ../../app/stylesheets/screen.scss */
 .flight_dates .flight_date p.lowest_price {
   float: left;
   width: 34px;
   font-weight: bold;
 }
-/* line 83, ../../app/stylesheets/screen.scss */
+/* line 81, ../../app/stylesheets/screen.scss */
 .flight_dates .flight_date div.discount_existed {
   background: url(/images/lowPrice.gif);
   width: 15px;
@@ -678,7 +691,7 @@ form#form_search_flights input[type="text"] {
   margin-left: 35px;
 }
 
-/* line 89, ../../app/stylesheets/screen.scss */
+/* line 87, ../../app/stylesheets/screen.scss */
 .clearfix {
   clear: both;
 }

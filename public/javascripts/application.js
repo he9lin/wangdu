@@ -34,13 +34,22 @@ var App = {
 		//$( "input.city" ).autocomplete({ source: availableTags });
 		$( "#global_loading" ).dialog({ height: 55, modal: true, autoOpen: false, title: '正在读取数据...', show: "fade", hide: "fade" });
 		$( "#cities_tabs" ).tabs();
-		$( "#cities_tabs" ).dialog({title: '请选择一个城市', width: 322, position: [290, 130], autoOpen: false, show: "fade", hide: "fade"});
+		$( "#cities_tabs" ).dialog({title: '请选择一个城市', width: 322, position: [400, 164], autoOpen: false, show: "fade", hide: "fade"});
 		$( "#search_button").button();
 		$( "#datepicker_depart" ).datepicker({ defaultDate: +1, numberOfMonths: 2, minDate: 0 });
 		$( "#datepicker_return" ).datepicker({ defaultDate: +7, numberOfMonths: 2, minDate: 0 });
 		$( "#direct_flag_all" ).attr("checked", "true");
 		$( "#flight_type_return" ).attr("checked", "true");
 		$( "#cities_tabs" ).parent().select('.ui-dialog').css("position: fixed");
+	},
+	
+	setupHelpPage: function(){
+		$( "a.general").button({ icons: { primary: "ui-icon-info" } });
+		$( "a.service").button({ icons: { primary: "ui-icon-help" } });
+		$( "a.ticket").button({ icons: { primary: "ui-icon-star" } });
+		$( "#general_accordion" ).accordion();
+		$( "#service_accordion" ).accordion();
+		$( "#ticket_accordion" ).accordion();
 	},
 	
 	popupModalDialog: function(msg){

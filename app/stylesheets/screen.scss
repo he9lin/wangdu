@@ -1,7 +1,7 @@
 @import "partials/base";
-@import "partials/layouts";
 @import "partials/header";
 @import "partials/footer";
+@import "partials/help";
 
 .ui-widget {
 	font-family: $blueprint-font-family;
@@ -17,31 +17,33 @@ h3{
 	font-size: 1.2em; }
 	
 #container{ 
-	border-left: 1px solid $light-border-color; 
-	border-right: 1px solid $light-border-color; }
-#content{ min-height: 570px; padding-left: 12px; }
-#sidebar{ 
-	padding: 2px 0 0 8px; 
-	border-right: 1px solid $light-border-color;
-	form{ width: 195px; } }
+	@include container; 
+	border-left: 2px solid $blue-border-color; 
+	border-right: 2px solid $blue-border-color; }
+#content{ 
+	width: 900px; 
+	min-height: 460px; 
+	background: url(/images/map-bg-p.png) repeat-y top; 
+	background-position: 30px; }
 
-	
-.search_result{ width: 700px; }	
-	
-.simple_table{ 
-	clear: left; 
-	margin: 5px 10px 10px 0;
-	.header{ background-color: $blueprint-background-color; } 
-	tr.detail_flight td{ 
-		background-color: $blue-bg-color; 
-		color: $dark-red-color;
-		ul{ li{ float: left; margin: 0 10px; list-style-type: none; } } }
-	td{
-		&.airline{ width: 100px; }
-		&.airport{ width: 100px; }
-		span{
-			&.price{ color: $dark-red-color; font-weight: bold;}
-			&.discount{ color: $green-color; } } } }
+.search_result{ 
+	width: 800px; 
+	margin: 20px 80px;	
+	#dto_header h3{ font-weight: bold; margin-left: 10px; }
+	.simple_table{ 
+		clear: left; 
+		margin: 5px 10px 10px 0;
+		.header{ background-color: $blueprint-background-color; } 
+		tr.detail_flight td{ 
+			background-color: $blue-bg-color; 
+			color: $dark-red-color;
+			ul{ li{ float: left; margin: 0 10px; list-style-type: none; } } }
+		td{
+			&.airline{ width: 100px; }
+			&.airport{ width: 100px; }
+			span{
+				&.price{ color: $dark-red-color; font-weight: bold;}
+				&.discount{ color: $green-color; } } } } }	
 
 #cities_tabs{ 
 	width: 320px;
@@ -57,16 +59,12 @@ h3{
 		margin: 2px 0;
 		line-height: 12px; 
 		width: 50px; } } }
-		
-form#form_search_flights{
-	input[type="text"]{ width: 110px; }
-}
 
 .flight_dates{ 
 	height: 55px;
 	.flight_date{
 		float: left;
-		padding: 0 28px; 
+		padding: 0 32px; 
 		margin: 0 1px;
 		background-color: $blue-bg-color;
 		cursor: pointer;

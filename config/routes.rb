@@ -58,4 +58,5 @@ Tugo::Application.routes.draw do
   
   root :to => "home#index"
   match 'search' => "home#search"
+  get 'help' => 'help#index' 
 end

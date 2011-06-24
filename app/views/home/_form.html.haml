@@ -2,27 +2,28 @@
   .flight_type
     ~ radio_button_tag 'flight_type', 'depart'
     ~ label_tag '单程'
+    %br
     ~ radio_button_tag 'flight_type', 'return'
     ~ label_tag '往返'
-  出发城市:
-  ~ text_field_tag "depart_city", "", :class=>"city current", :value => "成都"
-  %br
-  到达城市:
-  ~ text_field_tag "arrival_city", "", :class=>"city", :value => "北京"
-  %br
-  出发日期:
-  ~ text_field_tag "datepicker_depart", "", :class=>"city_datepicker"
-  %br
-  返回日期:
-  ~ text_field_tag "datepicker_return", "", :class=>"city_datepicker"
-  %br
-  .direct_flag
-    航段类型:
-    ~ radio_button_tag 'direct_flag', 'direct'
-    ~ label_tag '直达'
-    ~ radio_button_tag 'direct_flag', 'all'
-    ~ label_tag '所有'
-  .company
-    航空公司:
-    ~ select("airline", "airline_id", TravelSky::Companies.names_hash, {:include_blank => '全部'})
-  = submit_tag '查询', :id => "search_button"
+  .schedule
+    出发城市:
+    ~ text_field_tag "depart_city", "", :class=>"city current", :value => "成都"
+    到达城市:
+    ~ text_field_tag "arrival_city", "", :class=>"city", :value => "北京"
+    %br
+    出发日期:
+    ~ text_field_tag "datepicker_depart", "", :class=>"city_datepicker"
+    返回日期:
+    ~ text_field_tag "datepicker_return", "", :class=>"city_datepicker"
+  .types
+    .direct_flag
+      航段类型:
+      ~ radio_button_tag 'direct_flag', 'direct'
+      ~ label_tag '直达'
+      ~ radio_button_tag 'direct_flag', 'all'
+      ~ label_tag '所有'
+    .company
+      航空公司:
+      ~ select("airline", "airline_id", TravelSky::Companies.names_hash, {:include_blank => '全部'})
+  .submit_button
+    = submit_tag '查询', :id => "search_button"

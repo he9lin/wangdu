@@ -1,15 +1,4 @@
 $("#global_loading").dialog('close');
 $("#form_search_flights").removeAttr('disabled');
-<%- if @error.blank? %>
-	$("#depart_flights").html("");
-	$("#depart_flights").replaceWith("<%= escape_javascript(render :partial => 'flight_info', :locals => { :type => 'depart' })%>");
-	<%- if @flight_type == 'return' %>
-		$("#return_flights").replaceWith("<%= escape_javascript(render :partial => 'flight_info', :locals => { :type => 'return' })%>");
-	<%- else %>
-		$("#return_flights").html("");
-	<%- end %>
-	$("tr.detail_flight").hide();
-<%- else %>
-	$("#depart_flights").html("通过AV查询航班信息失败，系统暂时没有提供符合查询条件的航班，请查询航空公司文件");
-	$("#return_flights").html("");
-<%- end %>
+$("#content").html("<%= escape_javascript( render 'flights' )%>");
+$("tr.detail_flight").hide();
