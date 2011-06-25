@@ -2,6 +2,11 @@
 @import "partials/header";
 @import "partials/footer";
 @import "partials/help";
+@import "partials/widget";
+@import "partials/share";
+@import "partials/slides";
+@import "partials/partners";
+
 
 .ui-widget {
 	font-family: $blueprint-font-family;
@@ -11,24 +16,46 @@
 	text-align: center; }
 
 .flight_date p { margin: 0; }
+ul li{ list-style: none; }
 
 h3{
+	font-family: $blueprint-font-family;
 	font-weight: bold;
 	font-size: 1.2em; }
 	
+body{ 
+	background-color: $blue-bg-color;
+	background: url(/images/head_bg.png) repeat-x;
+	#top.fixed{
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 125px;
+		width: 100%;
+		z-index: -1; } }
+
 #container{ 
 	@include container; 
-	border-left: 2px solid $blue-border-color; 
-	border-right: 2px solid $blue-border-color; }
+	position: relative;
+	background-color: white;
+	#main{ 
+		float: left;
+		width: 958px;
+		padding-top: 30px;
+		background: url(/images/map-bg-p.png) no-repeat;
+		background-position: 20px 30px;
+		border-left: 1px solid $blue-border-color; 
+		border-right: 1px solid $blue-border-color; } }
+	
 #content{ 
-	width: 900px; 
-	min-height: 460px; 
-	background: url(/images/map-bg-p.png) repeat-y top; 
-	background-position: 30px; }
+	float: left;
+	width: 750px;  
+	min-height: 550px;
+	background-position: 40px 30px; }
 
 .search_result{ 
-	width: 800px; 
-	margin: 20px 80px;	
+	width: 700px; 
+	margin: 0 20px;	
 	#dto_header h3{ font-weight: bold; margin-left: 10px; }
 	.simple_table{ 
 		clear: left; 
@@ -64,7 +91,7 @@ h3{
 	height: 55px;
 	.flight_date{
 		float: left;
-		padding: 0 32px; 
+		padding: 0 25px; 
 		margin: 0 1px;
 		background-color: $blue-bg-color;
 		cursor: pointer;
@@ -85,3 +112,4 @@ h3{
 			margin-left: 35px; } } }
 	
 .clearfix{ clear: both; }
+.meta{ color: $quiet-color; }

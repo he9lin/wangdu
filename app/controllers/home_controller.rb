@@ -15,7 +15,7 @@ class HomeController < ApplicationController
     }
     
     result   = TravelSky::Base.search(options)
-    @error   = result.xpath("//messageText").text() || result.xpath("//error").text()
+    @error   = result.xpath("//messageText").text() || result.xpath("//error").text() || result.children.blank?
     @flights = @error.blank? ? TravelSky::Flights.new(result) : nil
     @flight_type = params["flight_type"]
   end

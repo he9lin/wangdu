@@ -18,4 +18,36 @@ module HomeHelper
     end
   end
   
+  def simple_box(title, &block)
+    content_tag(:div, :class => 'widget_box') do
+      head = content_tag(:div, :class => "widget_head") do
+        content_tag(:h3, :class => "ui-widget-header") do
+          title
+        end
+      end
+      body = content_tag(:div, :class => "widget_body") do
+        yield
+      end
+      head.concat body
+    end
+  end
+  
+  def tab_box(*args, &block)
+    opts  = args.extract_options!
+    title = args.first
+    boxid = "#{opts[:id]}-1"
+    opts[:class] = "tab_box #{opts[:class]}"
+    content_tag(:div, opts) do
+      head = content_tag(:ul) do
+        content_tag(:li) do
+          link_to title, (opts[:link] || "##{boxid}")
+        end
+      end
+      body = content_tag(:div, :id => boxid, :class => "tab_box_body") do
+        yield if block
+      end
+      head.concat body
+    end
+  end
+  
 end

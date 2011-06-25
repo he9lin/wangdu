@@ -1,0 +1,49 @@
+ul.share {
+  padding: 0 10px;
+	position: absolute;
+	left: 590px;
+	top: 435px;
+	li {
+		float: left;
+		$icon-width: 34px;
+		$icon-height: 40px;
+		&.name{ 
+			line-height: 40px; 
+			font-weight: bold; 
+			color: $blue-text-color;
+			padding-right: 5px;}
+		a {
+		  @include fixed-img-bg($icon-width, 40px, "share_icons.png");
+			&.renren { 
+				background-position: -35px 0px;
+				&:hover { background-position: -35px -40px; } }
+
+			&.kaixin { 
+				background-position: -35px * 2 0px;
+				&:hover { background-position: -35px * 2 -40px; } }
+
+			&.douban { 
+				background-position: -35px * 3 0px;
+				&:hover { background-position: -35px * 3 -40px; } }
+
+			&.netease { 
+				background-position: -35px * 4 0px;
+				&:hover { background-position: -35px * 4 -40px; } }
+
+			&.fetion { 
+				background-position: -35px * 5 0px;
+				&:hover { background-position: -35px * 5 -40px; } }
+
+			&.qqweibo { 
+				background-position: -35px * 7 0px;
+				&:hover { background-position: -35px * 7 -40px; } }
+
+			&.qqspace { 
+				background-position: -35px * 6 0px;
+				&:hover { background-position: -35px * 6 -40px; } }
+
+			&.msn { 
+				background-position: -35px * 8 0px;
+				&:hover { background-position: -35px * 8 -40px; } }
+				
+			&:hover { background-position: 0 -40px; } } } }

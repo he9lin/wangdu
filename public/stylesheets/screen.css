@@ -384,100 +384,125 @@ body .removed {
   color: white;
 }
 
-/* line 2, ../../app/stylesheets/partials/_header.scss */
+/* line 1, ../../app/stylesheets/partials/_header.scss */
+#container #header {
+  background-color: white;
+}
+/* line 3, ../../app/stylesheets/partials/_header.scss */
 #container #header .top_header {
-  height: 125px;
-  border-bottom: 2px solid #6fa8cc;
+  height: 350px;
+  width: 960px;
+  background: url(/images/head_bg.png) repeat-x;
+  border-bottom: 5px solid #80c4e5;
 }
-/* line 5, ../../app/stylesheets/partials/_header.scss */
-#container #header .top_header .logo {
-  height: 125px;
-  width: 150px;
+/* line 8, ../../app/stylesheets/partials/_header.scss */
+#container #header .top_header .logo_l {
   float: left;
-  background: url(/images/logo-pic.png) no-repeat;
+  height: 350px;
+  width: 450px;
+  background: url(/images/toppic_L.png) no-repeat;
 }
-/* line 10, ../../app/stylesheets/partials/_header.scss */
+/* line 14, ../../app/stylesheets/partials/_header.scss */
+#container #header .top_header .logo_r {
+  height: 350px;
+  width: 450px;
+  float: left;
+  background: url(/images/toppic_R.png) no-repeat;
+}
+/* line 19, ../../app/stylesheets/partials/_header.scss */
 #container #header .top_header .title_header {
   padding: 15px 0 0 160px;
   position: relative;
 }
-/* line 13, ../../app/stylesheets/partials/_header.scss */
-#container #header .top_header .title_header h3 {
-  height: 47px;
-  background: url(/images/title.gif) no-repeat;
-}
-/* line 16, ../../app/stylesheets/partials/_header.scss */
-#container #header .top_header .title_header a.help {
-  width: 135px;
-  height: 22px;
-  background: url(/images/help.gif) no-repeat;
+/* line 22, ../../app/stylesheets/partials/_header.scss */
+#container #header .top_header .title_header a {
+  width: 125px;
+  height: 80px;
   position: absolute;
-  top: 20px;
-  left: 800px;
+  left: 600px;
+  top: 0px;
+  background: url(/images/nav_bg.png) repeat-x;
+  padding-top: 45px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.3em;
+  color: #FDF;
 }
-/* line 23, ../../app/stylesheets/partials/_header.scss */
+/* line 35, ../../app/stylesheets/partials/_header.scss */
+#container #header .top_header .title_header a.intro {
+  left: 730px;
+}
+/* line 36, ../../app/stylesheets/partials/_header.scss */
 #container #header .top_header .title_header .phone {
   padding-left: 5px;
   font-size: 1.8em;
+  position: absolute;
+  left: 40px;
+  top: 300px;
   color: #a3620a;
 }
-/* line 27, ../../app/stylesheets/partials/_header.scss */
+/* line 43, ../../app/stylesheets/partials/_header.scss */
 #container #header .top_header .title_header .phone .tel {
   float: left;
-  color: #72bfe9;
+  background: url(/images/icon.png);
+  width: 16px;
+  height: 16px;
+  margin-top: 10px;
 }
-/* line 28, ../../app/stylesheets/partials/_header.scss */
+/* line 44, ../../app/stylesheets/partials/_header.scss */
 #container #header .top_header .title_header .phone .number {
-  color: #f47322;
-  padding-left: 110px;
+  color: #7f4098;
+  margin-left: 30px;
+  width: 200px;
 }
-/* line 29, ../../app/stylesheets/partials/_header.scss */
+/* line 45, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search {
-  border-bottom: 1px solid #6fa8cc;
-  background: url(/images/logo-pic.png) no-repeat;
+  border: 1px solid #6fa8cc;
+  border-top: none;
   height: 80px;
-  background-position-y: -150px;
+  position: relative;
 }
-/* line 34, ../../app/stylesheets/partials/_header.scss */
+/* line 51, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights {
-  margin-left: 130px;
+  margin-left: 6px;
   font-size: 1.2em;
   font-weight: bold;
 }
-/* line 38, ../../app/stylesheets/partials/_header.scss */
+/* line 55, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights .flight_type {
+  padding-left: 6px;
   float: left;
   width: 63px;
   height: 80px;
   border-right: 1px solid #6fa8cc;
 }
-/* line 43, ../../app/stylesheets/partials/_header.scss */
+/* line 61, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights .flight_type label, #container #header .flight_search form#form_search_flights .flight_type input {
-  line-height: 30px;
-  margin-top: 15px;
+  line-height: 20px;
+  margin-top: 10px;
 }
-/* line 44, ../../app/stylesheets/partials/_header.scss */
+/* line 62, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights .types {
   margin-left: 10px;
   width: 210px;
   height: 80px;
   float: left;
 }
-/* line 49, ../../app/stylesheets/partials/_header.scss */
+/* line 67, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights .types .direct_flag {
   line-height: 40px;
 }
-/* line 51, ../../app/stylesheets/partials/_header.scss */
+/* line 69, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights .submit_button {
   height: 80px;
-  margin-left: 715px;
+  margin-left: 725px;
   border-left: 1px solid #6fa8cc;
 }
-/* line 55, ../../app/stylesheets/partials/_header.scss */
+/* line 73, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights .submit_button input[type="submit"] {
-  margin: 25px;
+  margin: 25px 0 0 50px;
 }
-/* line 56, ../../app/stylesheets/partials/_header.scss */
+/* line 74, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights .schedule {
   width: 425px;
   height: 80px;
@@ -485,7 +510,12 @@ body .removed {
   padding-left: 10px;
   border-right: 1px solid #6fa8cc;
 }
-/* line 62, ../../app/stylesheets/partials/_header.scss */
+/* line 80, ../../app/stylesheets/partials/_header.scss */
+#container #header .flight_search form#form_search_flights input.city_datepicker {
+  background: url(/images/cal.png) no-repeat;
+  background-position: 100px 4px;
+}
+/* line 84, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights input[type="text"] {
   background-color: #dbf1fe;
   width: 118px;
@@ -498,149 +528,432 @@ body .removed {
   text-align: center;
   line-height: 34px;
   height: 34px;
-  background-color: #108dcb;
+  background-color: #7f4098;
   font-size: 1.2em;
   color: white;
+  clear: left;
 }
-/* line 8, ../../app/stylesheets/partials/_footer.scss */
+/* line 9, ../../app/stylesheets/partials/_footer.scss */
 #container #footer a {
   color: white;
   text-decoration: none;
   margin-left: 10px;
 }
-/* line 13, ../../app/stylesheets/partials/_footer.scss */
+/* line 14, ../../app/stylesheets/partials/_footer.scss */
 #container #footer .copyright {
   float: left;
   margin-left: 10px;
 }
-/* line 14, ../../app/stylesheets/partials/_footer.scss */
+/* line 15, ../../app/stylesheets/partials/_footer.scss */
 #container #footer .design {
   float: right;
   margin-right: 20px;
 }
-/* line 17, ../../app/stylesheets/partials/_footer.scss */
+/* line 18, ../../app/stylesheets/partials/_footer.scss */
 #container #footer .design .logo {
   margin: 7px 5px 0 0;
   height: 20px;
   width: 20px;
   float: left;
-  background: url(/images/heyook.gif) no-repeat;
+  background: url(/images/heyook.png) no-repeat;
 }
 
 /* line 1, ../../app/stylesheets/partials/_help.scss */
 .helps {
-  margin: 30px;
+  margin: 15px;
 }
 /* line 4, ../../app/stylesheets/partials/_help.scss */
+.helps #help_left .ui-button-text {
+  color: white;
+}
+/* line 7, ../../app/stylesheets/partials/_help.scss */
 .helps #help_left a.ui-button {
   margin: 0 6px;
 }
-/* line 7, ../../app/stylesheets/partials/_help.scss */
+/* line 10, ../../app/stylesheets/partials/_help.scss */
 .helps #help_right {
-  margin: 15px 0 0 30px;
+  margin: 10px 0 0 20px;
+}
+/* line 12, ../../app/stylesheets/partials/_help.scss */
+.helps #help_right .content_title {
+  font-weight: bold;
+}
+/* line 14, ../../app/stylesheets/partials/_help.scss */
+.helps #help_right .content.intro img {
+  width: 420px;
+  height: 280px;
 }
 
-/* line 6, ../../app/stylesheets/screen.scss */
+/* line 1, ../../app/stylesheets/partials/_widget.scss */
+.tab_box {
+  width: 190px;
+  margin-left: 750px;
+  margin-top: 20px;
+  background-color: white;
+}
+/* line 6, ../../app/stylesheets/partials/_widget.scss */
+.tab_box .ui-widget-header {
+  height: 27px;
+}
+/* line 7, ../../app/stylesheets/partials/_widget.scss */
+.tab_box .ui-tabs-panel {
+  padding: 1em 0 0 0;
+}
+
+/* line 10, ../../app/stylesheets/partials/_widget.scss */
+.widget_box {
+  width: 190px;
+  margin-left: 750px;
+  margin-top: 20px;
+  background-color: white;
+}
+/* line 15, ../../app/stylesheets/partials/_widget.scss */
+.widget_box .widget_head {
+  height: 24px;
+}
+/* line 17, ../../app/stylesheets/partials/_widget.scss */
+.widget_box .widget_head h3 {
+  height: 20px;
+  font-size: 1.2em;
+  padding: 2px;
+  padding-left: 10px;
+}
+/* line 22, ../../app/stylesheets/partials/_widget.scss */
+.widget_box .widget_body {
+  min-height: 80px;
+  padding: 4px;
+  border: 1px solid #80c4e5;
+}
+/* line 27, ../../app/stylesheets/partials/_widget.scss */
+.widget_box .widget_body ul li {
+  list-style: none;
+  margin-bottom: 2px;
+}
+
+/* line 1, ../../app/stylesheets/partials/_share.scss */
+ul.share {
+  padding: 0 10px;
+  position: absolute;
+  left: 590px;
+  top: 435px;
+}
+/* line 6, ../../app/stylesheets/partials/_share.scss */
+ul.share li {
+  float: left;
+}
+/* line 10, ../../app/stylesheets/partials/_share.scss */
+ul.share li.name {
+  line-height: 40px;
+  font-weight: bold;
+  color: #0791ca;
+  padding-right: 5px;
+}
+/* line 15, ../../app/stylesheets/partials/_share.scss */
+ul.share li a {
+  background: url("/images/share_icons.png") 0 0 no-repeat;
+  display: block;
+  width: 34px;
+  height: 40px;
+}
+/* line 17, ../../app/stylesheets/partials/_share.scss */
+ul.share li a.renren {
+  background-position: -35px 0px;
+}
+/* line 19, ../../app/stylesheets/partials/_share.scss */
+ul.share li a.renren:hover {
+  background-position: -35px -40px;
+}
+/* line 21, ../../app/stylesheets/partials/_share.scss */
+ul.share li a.kaixin {
+  background-position: -70px 0px;
+}
+/* line 23, ../../app/stylesheets/partials/_share.scss */
+ul.share li a.kaixin:hover {
+  background-position: -70px -40px;
+}
+/* line 25, ../../app/stylesheets/partials/_share.scss */
+ul.share li a.douban {
+  background-position: -105px 0px;
+}
+/* line 27, ../../app/stylesheets/partials/_share.scss */
+ul.share li a.douban:hover {
+  background-position: -105px -40px;
+}
+/* line 29, ../../app/stylesheets/partials/_share.scss */
+ul.share li a.netease {
+  background-position: -140px 0px;
+}
+/* line 31, ../../app/stylesheets/partials/_share.scss */
+ul.share li a.netease:hover {
+  background-position: -140px -40px;
+}
+/* line 33, ../../app/stylesheets/partials/_share.scss */
+ul.share li a.fetion {
+  background-position: -175px 0px;
+}
+/* line 35, ../../app/stylesheets/partials/_share.scss */
+ul.share li a.fetion:hover {
+  background-position: -175px -40px;
+}
+/* line 37, ../../app/stylesheets/partials/_share.scss */
+ul.share li a.qqweibo {
+  background-position: -245px 0px;
+}
+/* line 39, ../../app/stylesheets/partials/_share.scss */
+ul.share li a.qqweibo:hover {
+  background-position: -245px -40px;
+}
+/* line 41, ../../app/stylesheets/partials/_share.scss */
+ul.share li a.qqspace {
+  background-position: -210px 0px;
+}
+/* line 43, ../../app/stylesheets/partials/_share.scss */
+ul.share li a.qqspace:hover {
+  background-position: -210px -40px;
+}
+/* line 45, ../../app/stylesheets/partials/_share.scss */
+ul.share li a.msn {
+  background-position: -280px 0px;
+}
+/* line 47, ../../app/stylesheets/partials/_share.scss */
+ul.share li a.msn:hover {
+  background-position: -280px -40px;
+}
+/* line 49, ../../app/stylesheets/partials/_share.scss */
+ul.share li a:hover {
+  background-position: 0 -40px;
+}
+
+/* line 1, ../../app/stylesheets/partials/_slides.scss */
+#slides {
+  margin: 15px;
+}
+/* line 3, ../../app/stylesheets/partials/_slides.scss */
+#slides ul.pagination {
+  height: 20px;
+  margin-top: 5px;
+}
+/* line 6, ../../app/stylesheets/partials/_slides.scss */
+#slides ul.pagination li {
+  float: left;
+}
+/* line 8, ../../app/stylesheets/partials/_slides.scss */
+#slides ul.pagination li.current a {
+  color: red;
+}
+/* line 9, ../../app/stylesheets/partials/_slides.scss */
+#slides ul.pagination li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #ccc;
+  border: 1px solid pink;
+  padding: 4px;
+  line-height: 13px;
+  display: inline-block;
+  margin: 0 2px;
+}
+/* line 18, ../../app/stylesheets/partials/_slides.scss */
+#slides .slides_container {
+  width: 428px;
+  height: 170px;
+}
+/* line 21, ../../app/stylesheets/partials/_slides.scss */
+#slides .slides_container div {
+  width: 428px;
+  height: 170px;
+  display: block;
+}
+/* line 25, ../../app/stylesheets/partials/_slides.scss */
+#slides .slides_container div img {
+  width: 428px;
+  height: 170px;
+}
+
+/* line 1, ../../app/stylesheets/partials/_partners.scss */
+#bottom {
+  clear: left;
+  border-left: 1px solid #6fa8cc;
+  border-right: 1px solid #6fa8cc;
+}
+/* line 5, ../../app/stylesheets/partials/_partners.scss */
+#bottom .partners_box {
+  border-top: 1px solid #e6e6e6;
+  margin: 0 10px 0 10px;
+  padding: 30px 0 10px 0;
+}
+/* line 9, ../../app/stylesheets/partials/_partners.scss */
+#bottom .partners_box ul.partners {
+  height: 60px;
+}
+/* line 11, ../../app/stylesheets/partials/_partners.scss */
+#bottom .partners_box ul.partners li {
+  text-align: center;
+  float: left;
+  width: 80px;
+  vertical-align: middle;
+  line-height: 60px;
+  height: 60px;
+  padding: 0 9px;
+  border-left: 1px solid #e6e6e6;
+}
+/* line 13, ../../app/stylesheets/partials/_partners.scss */
+#bottom .partners_box ul.partners li:first-child {
+  border-left: none;
+}
+/* line 21, ../../app/stylesheets/partials/_partners.scss */
+#bottom .partners_box ul.partners li img {
+  width: 83px;
+  height: 55px;
+}
+/* line 24, ../../app/stylesheets/partials/_partners.scss */
+#bottom .partners_box ul.partners li img.shanghaiair {
+  width: 73px;
+  height: 30px;
+  margin-top: 8px;
+}
+/* line 25, ../../app/stylesheets/partials/_partners.scss */
+#bottom .partners_box ul.partners li img.travelskynet {
+  width: 73px;
+  height: 40px;
+  margin-top: 8px;
+}
+/* line 26, ../../app/stylesheets/partials/_partners.scss */
+#bottom .partners_box ul.partners li img.chinaeastern {
+  width: 70px;
+}
+
+/* line 11, ../../app/stylesheets/screen.scss */
 .ui-widget {
   font-family: "Helvetica Neve", Helvetica, Tahoma, Arial, Verdana, "Hiragino Sans GB", sans-serif;
   font-size: 0.9em;
 }
 
-/* line 9, ../../app/stylesheets/screen.scss */
+/* line 14, ../../app/stylesheets/screen.scss */
 #global_loading {
   overflow: hidden;
   text-align: center;
 }
 
-/* line 13, ../../app/stylesheets/screen.scss */
+/* line 18, ../../app/stylesheets/screen.scss */
 .flight_date p {
   margin: 0;
 }
 
-/* line 15, ../../app/stylesheets/screen.scss */
+/* line 19, ../../app/stylesheets/screen.scss */
+ul li {
+  list-style: none;
+}
+
+/* line 21, ../../app/stylesheets/screen.scss */
 h3 {
+  font-family: "Helvetica Neve", Helvetica, Tahoma, Arial, Verdana, "Hiragino Sans GB", sans-serif;
   font-weight: bold;
   font-size: 1.2em;
 }
 
-/* line 19, ../../app/stylesheets/screen.scss */
+/* line 26, ../../app/stylesheets/screen.scss */
+body {
+  background-color: #eaf7ff;
+  background: url(/images/head_bg.png) repeat-x;
+}
+/* line 29, ../../app/stylesheets/screen.scss */
+body #top.fixed {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 125px;
+  width: 100%;
+  z-index: -1;
+}
+
+/* line 37, ../../app/stylesheets/screen.scss */
 #container {
   width: 960px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
-  border-left: 2px solid #6fa8cc;
-  border-right: 2px solid #6fa8cc;
+  position: relative;
+  background-color: white;
+}
+/* line 41, ../../app/stylesheets/screen.scss */
+#container #main {
+  float: left;
+  width: 958px;
+  padding-top: 30px;
+  background: url(/images/map-bg-p.png) no-repeat;
+  background-position: 20px 30px;
+  border-left: 1px solid #6fa8cc;
+  border-right: 1px solid #6fa8cc;
 }
 
-/* line 23, ../../app/stylesheets/screen.scss */
+/* line 50, ../../app/stylesheets/screen.scss */
 #content {
-  width: 900px;
-  min-height: 460px;
-  background: url(/images/map-bg-p.png) repeat-y top;
-  background-position: 30px;
+  float: left;
+  width: 750px;
+  min-height: 550px;
+  background-position: 40px 30px;
 }
 
-/* line 29, ../../app/stylesheets/screen.scss */
+/* line 56, ../../app/stylesheets/screen.scss */
 .search_result {
-  width: 800px;
-  margin: 20px 80px;
+  width: 700px;
+  margin: 0 20px;
 }
-/* line 32, ../../app/stylesheets/screen.scss */
+/* line 59, ../../app/stylesheets/screen.scss */
 .search_result #dto_header h3 {
   font-weight: bold;
   margin-left: 10px;
 }
-/* line 33, ../../app/stylesheets/screen.scss */
+/* line 60, ../../app/stylesheets/screen.scss */
 .search_result .simple_table {
   clear: left;
   margin: 5px 10px 10px 0;
 }
-/* line 36, ../../app/stylesheets/screen.scss */
+/* line 63, ../../app/stylesheets/screen.scss */
 .search_result .simple_table .header {
   background-color: #f5f5f5;
 }
-/* line 37, ../../app/stylesheets/screen.scss */
+/* line 64, ../../app/stylesheets/screen.scss */
 .search_result .simple_table tr.detail_flight td {
   background-color: #eaf7ff;
   color: #a3620a;
 }
-/* line 40, ../../app/stylesheets/screen.scss */
+/* line 67, ../../app/stylesheets/screen.scss */
 .search_result .simple_table tr.detail_flight td ul li {
   float: left;
   margin: 0 10px;
   list-style-type: none;
 }
-/* line 42, ../../app/stylesheets/screen.scss */
+/* line 69, ../../app/stylesheets/screen.scss */
 .search_result .simple_table td.airline {
   width: 100px;
 }
-/* line 43, ../../app/stylesheets/screen.scss */
+/* line 70, ../../app/stylesheets/screen.scss */
 .search_result .simple_table td.airport {
   width: 100px;
 }
-/* line 45, ../../app/stylesheets/screen.scss */
+/* line 72, ../../app/stylesheets/screen.scss */
 .search_result .simple_table td span.price {
   color: #a3620a;
   font-weight: bold;
 }
-/* line 46, ../../app/stylesheets/screen.scss */
+/* line 73, ../../app/stylesheets/screen.scss */
 .search_result .simple_table td span.discount {
   color: #8fc644;
 }
 
-/* line 48, ../../app/stylesheets/screen.scss */
+/* line 75, ../../app/stylesheets/screen.scss */
 #cities_tabs {
   width: 320px;
   height: 200px;
   clear: left;
 }
-/* line 52, ../../app/stylesheets/screen.scss */
+/* line 79, ../../app/stylesheets/screen.scss */
 #cities_tabs .city_selects {
   padding: 0;
   margin: 0;
 }
-/* line 55, ../../app/stylesheets/screen.scss */
+/* line 82, ../../app/stylesheets/screen.scss */
 #cities_tabs .city_selects .city_select {
   cursor: pointer;
   float: left;
@@ -650,40 +963,40 @@ h3 {
   width: 50px;
 }
 
-/* line 63, ../../app/stylesheets/screen.scss */
+/* line 90, ../../app/stylesheets/screen.scss */
 .flight_dates {
   height: 55px;
 }
-/* line 65, ../../app/stylesheets/screen.scss */
+/* line 92, ../../app/stylesheets/screen.scss */
 .flight_dates .flight_date {
   float: left;
-  padding: 0 32px;
+  padding: 0 25px;
   margin: 0 1px;
   background-color: #eaf7ff;
   cursor: pointer;
   border: 1px solid #80c4e5;
 }
-/* line 72, ../../app/stylesheets/screen.scss */
+/* line 99, ../../app/stylesheets/screen.scss */
 .flight_dates .flight_date:hover {
   background-color: #a8dcfb;
 }
-/* line 73, ../../app/stylesheets/screen.scss */
+/* line 100, ../../app/stylesheets/screen.scss */
 .flight_dates .flight_date.current {
   background-color: #80c4e5;
   border-bottom: none;
 }
-/* line 76, ../../app/stylesheets/screen.scss */
+/* line 103, ../../app/stylesheets/screen.scss */
 .flight_dates .flight_date p.year {
   visibility: hidden;
   height: 0px;
 }
-/* line 77, ../../app/stylesheets/screen.scss */
+/* line 104, ../../app/stylesheets/screen.scss */
 .flight_dates .flight_date p.lowest_price {
   float: left;
   width: 34px;
   font-weight: bold;
 }
-/* line 81, ../../app/stylesheets/screen.scss */
+/* line 108, ../../app/stylesheets/screen.scss */
 .flight_dates .flight_date div.discount_existed {
   background: url(/images/lowPrice.gif);
   width: 15px;
@@ -691,7 +1004,12 @@ h3 {
   margin-left: 35px;
 }
 
-/* line 87, ../../app/stylesheets/screen.scss */
+/* line 114, ../../app/stylesheets/screen.scss */
 .clearfix {
   clear: both;
+}
+
+/* line 115, ../../app/stylesheets/screen.scss */
+.meta {
+  color: #a0a0a0;
 }

@@ -1,64 +1,86 @@
 #container #header {
+	background-color: white;
 	.top_header{  
-		height: 125px;
-		border-bottom: 2px solid $blue-border-color;
-	  .logo { 
-			height: 125px; 
-			width: 150px; 
+		height: 350px;
+		width: 960px;
+		background: url(/images/head_bg.png) repeat-x;
+		border-bottom: 5px solid $light-blue-color;
+		.logo_l{ 
+			float: left;
+			height: 350px;
+			width: 450px;
+			background: url(/images/toppic_L.png) no-repeat;
+		}
+	  .logo_r { 
+			height: 350px; 
+			width: 450px; 
 			float: left; 
-			background: url(/images/logo-pic.png) no-repeat; }
+			background: url(/images/toppic_R.png) no-repeat; }
 		.title_header{
 			padding: 15px 0 0 160px;
 			position: relative;
-			h3{ 
-				height: 47px;
-				background: url(/images/title.gif) no-repeat; }
-			a.help{
-				width: 135px;
-				height: 22px;
-				background: url(/images/help.gif) no-repeat; 
+			a{ 	
+				width: 125px;
+				height: 80px;
 				position: absolute;
-				top: 20px;
-				left: 800px; }
+				left: 600px;
+				top: 0px;
+				background: url(/images/nav_bg.png) repeat-x;
+				padding-top: 45px;
+				text-align:center;
+				text-decoration: none;
+				font-size: 1.3em;
+				color: #FDF;
+				&.help{ }
+				&.intro{ left: 730px; } }
 			.phone{ 
 				padding-left: 5px; 
 				font-size: 1.8em;  
+				position: absolute;
+				left: 40px;
+				top: 300px;
 				color: $dark-red-color;
-				.tel{ float: left; color: $lighterer-blue-color; }
-				.number{ color: $light-orange-color; padding-left: 110px; } } } }
+				.tel{ float: left; background: url(/images/icon.png); width: 16px; height:16px; margin-top: 10px; }
+				.number{ color: $purple-color; margin-left: 30px; width: 200px;} } } }
 	.flight_search{
-		border-bottom: 1px solid $blue-border-color;
-		background: url(/images/logo-pic.png) no-repeat;
-		height: 80px;
-		background-position-y: -150px;
+		border: 1px solid $blue-border-color;
+		border-top: none;
+		$form-height: 80px;
+		height: $form-height;
+		position: relative;
 		form#form_search_flights{
-			margin-left: 130px;
+			margin-left: 6px;
 			font-size: 1.2em;
 			font-weight: bold;
 			.flight_type{ 
+				padding-left: 6px;
 				float: left; 
 				width: 63px;
-				height: 80px;
+				height: $form-height;
 				border-right: 1px solid $blue-border-color;
-				label, input{ line-height: 30px; margin-top: 15px;} }
+				label, input{ line-height: 20px; margin-top: 10px;} }
 			.types{	
 				margin-left: 10px; 
 				width: 210px;
-				height: 80px; 
+				height: $form-height; 
 				float: left;
 				.direct_flag{ line-height: 40px; }
 				.company{ } }
 			.submit_button{ 
-				height: 80px; 
-				margin-left: 715px;
+				height: $form-height; 
+				margin-left: 725px;
 				border-left: 1px solid $blue-border-color; 
-				input[type="submit"]{ margin: 25px; } }
+				input[type="submit"]{ margin: 25px 0 0 50px; } }
 			.schedule{ 
 				width: 425px;
-				height: 80px;
+				height: $form-height;
 				float: left;
 				padding-left: 10px; 
 				border-right: 1px solid $blue-border-color; }
+			input.city_datepicker{
+				background: url(/images/cal.png) no-repeat;
+				background-position: 100px 4px;
+			}
 			input[type="text"]{ 
 				background-color: $light-blue-bg-color;
 				width: 118px; 

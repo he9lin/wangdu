@@ -1,0 +1,26 @@
+#bottom{
+	clear: left;
+	border-left: 1px solid $blue-border-color;
+	border-right: 1px solid $blue-border-color;
+	.partners_box{ 
+		border-top: 1px solid $light-border-color;
+		margin: 0 10px 0 10px; 
+		padding: 30px 0 10px 0;
+		ul.partners{
+			height: 60px;
+			li{ 
+				text-align: center;
+				&:first-child{ border-left: none; }
+				float: left; 
+				width: 80px;
+				vertical-align: middle;
+				line-height: 60px;
+				height: 60px;
+				padding: 0 9px;
+				border-left: 1px solid $light-border-color;
+				img{ 
+					width: 83px; 
+					height: 55px; 
+					&.shanghaiair{ width: 73px; height: 30px; margin-top: 8px;}
+					&.travelskynet{ width: 73px; height: 40px; margin-top: 8px;}
+					&.chinaeastern{ width: 70px;  } } } } } }

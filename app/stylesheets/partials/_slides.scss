@@ -1,0 +1,27 @@
+#slides {
+	margin: 15px;
+  ul.pagination {
+    height: 20px;
+    margin-top: 5px;
+    li { 
+      float: left;
+      &.current a { color: red; }
+      a { 
+        text-decoration: none; 
+        font-weight: bold;
+        color: #ccc;
+        border: 1px solid pink;
+        padding: 4px;
+        line-height: 13px;
+        display: inline-block;
+        margin: 0 2px; } } }
+  .slides_container {
+    width:428px;
+    height:170px;
+    div {
+      width:428px;
+      height:170px;
+      display:block;
+      img {
+        width:428px;
+        height:170px; } } } }

@@ -1,0 +1,29 @@
+.tab_box{
+	width: 190px;
+	margin-left: 750px;
+	margin-top: 20px;
+	background-color: white;
+	.ui-widget-header { height: 27px; }
+	.ui-tabs-panel { padding: 1em 0 0 0; }
+	.tab_box_body{ } }
+
+.widget_box{
+	width: 190px;
+	margin-left: 750px;
+	margin-top: 20px;
+	background-color: white;
+	.widget_head{ 
+		height: 24px; 
+		h3{ 
+			height: 20px; 
+			font-size: 1.2em; 
+			padding: 2px;
+			padding-left: 10px; } }
+	.widget_body{
+		min-height: 80px;
+		padding: 4px;
+		border: 1px solid $light-blue-color;
+		ul{
+			li{
+				list-style: none;
+				margin-bottom: 2px; 	} } } }

@@ -25,6 +25,10 @@ var App = {
     })
 	},
 	
+	closeGlobalLoadingDialog : function(){
+		$("#global_loading").dialog('close');
+	},
+	
 	/************
 	Widgets on tugo.com
 	*************/
@@ -34,22 +38,25 @@ var App = {
 		//$( "input.city" ).autocomplete({ source: availableTags });
 		$( "#global_loading" ).dialog({ height: 55, modal: true, autoOpen: false, title: '正在读取数据...', show: "fade", hide: "fade" });
 		$( "#cities_tabs" ).tabs();
-		$( "#cities_tabs" ).dialog({title: '请选择一个城市', width: 322, position: [400, 164], autoOpen: false, show: "fade", hide: "fade"});
+		$( "#cities_tabs" ).dialog({title: '请选择一个城市', width: 322, position: [350, 160], autoOpen: false, show: "fade", hide: "fade"});
 		$( "#search_button").button();
-		$( "#datepicker_depart" ).datepicker({ defaultDate: +1, numberOfMonths: 2, minDate: 0 });
-		$( "#datepicker_return" ).datepicker({ defaultDate: +7, numberOfMonths: 2, minDate: 0 });
+		$( "#datepicker_depart" ).datepicker({ defaultDate: +1, numberOfMonths: 2, minDate: 0, showAnim: 'fade' });
+		$( "#datepicker_return" ).datepicker({ defaultDate: +7, numberOfMonths: 2, minDate: 0, showAnim: 'fade' });
 		$( "#direct_flag_all" ).attr("checked", "true");
 		$( "#flight_type_return" ).attr("checked", "true");
-		$( "#cities_tabs" ).parent().select('.ui-dialog').css("position: fixed");
+		$( ".tab_box" ).tabs( { ajaxOptions: {　error: function( xhr, status, index, anchor ) {　$( anchor.hash ).html(　"没有接收到信息" );　}　} } );
+		$( "#slides").slides({ preload: true, preloadImage: '/images/loading-small.gif', play: 5000, pause: 2500, hoverPause: true });
 	},
 	
 	setupHelpPage: function(){
-		$( "a.general").button({ icons: { primary: "ui-icon-info" } });
-		$( "a.service").button({ icons: { primary: "ui-icon-help" } });
-		$( "a.ticket").button({ icons: { primary: "ui-icon-star" } });
+		$( "a.general.help").button({ icons: { primary: "ui-icon-info" } });
+		$( "a.service.help").button({ icons: { primary: "ui-icon-help" } });
+		$( "a.ticket.help").button({ icons: { primary: "ui-icon-star" } });
+		$( "a.intro.help").button({ icons: { primary: "ui-icon-suitcase" } });
 		$( "#general_accordion" ).accordion();
 		$( "#service_accordion" ).accordion();
 		$( "#ticket_accordion" ).accordion();
+		$( "a.top_nav").removeAttr('disabled');
 	},
 	
 	popupModalDialog: function(msg){
@@ -124,13 +131,25 @@ var App = {
 		});
 		
 		$('input').click(function(){  $( "#cities_tabs" ).dialog('close'); });
-	}
+	},
+	
+	setupBoxPartners : function() {
+    $.ajax({
+      url : '/static?cat=partners',
+      success : function(data) {
+				$('#bottom .partners_box').html(data);
+      },
+      global : false
+    })
+  }
 	
 }
 
 $(function() {
 	App.setupAjaxCallbacks();
 	App.setupJQueryWidgets();
+	App.setupHelpPage();
 	App.setupSearchForm();
 	App.setupFlightDetailToggle();
+	App.setupBoxPartners();
 });

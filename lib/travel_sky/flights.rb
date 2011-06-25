@@ -13,6 +13,7 @@ module TravelSky
       request = data.xpath("//searchFlightInfoDTO").first
       @depart_title = "#{request.orgTime.content} #{request.orgCityName.content} - #{request.destCityName.content}"
       @return_title = "#{request.returnTime.content} #{request.destCityName.content} - #{request.orgCityName.content}"
+    rescue NoMethodError
     end
     
   end

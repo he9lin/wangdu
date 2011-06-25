@@ -3,14 +3,17 @@
     ~ link_to(image_tag("http://www.theie6countdown.com/images/upgrade.jpg"), "http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode")
 #header
   .top_header
-    .logo
+    .logo_l
+    .logo_r
     .title_header
       %h3
       .phone
-        .tel~ "订票电话:"
+        .tel
         .number~ "(028) 87063333"
-      ~ link_to "", help_url, :class => "help", :remote => true
+      ~ link_to "帮助中心", help_url(:cat => 'general'), :class => "help top_nav", :remote => true  
+      ~ link_to "公司简介", help_url(:cat => 'intro'), :class => "intro top_nav", :remote => true
   .flight_search    
+    ~ cities_dialog
     ~ render 'home/form'
 .clearfix
   

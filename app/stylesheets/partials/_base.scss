@@ -55,6 +55,8 @@ $regular-blue-bg-color: #108dcb;
 $blue-bg-color: #eaf7ff;
 $light-blue-bg-color: #dbf1fe;
 
+$purple-color: #7F4098;
+
 $red-color: #E94D27;
 $dark-red-color: #A3620A;
 $light-orange-color: #f47322;
@@ -75,3 +77,25 @@ $announce-day-color-two: #80c4e5;
 $blueprint-font-family: "Helvetica Neve",Helvetica,Tahoma,Arial,Verdana,"Hiragino Sans GB",sans-serif;
 
 $theme-bg-color: #35414F;
+
+@mixin replace-button($img, $w, $h) {
+  display: inline-block;
+  width: $w;
+  height: $h;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  background: none;
+  @include replace-text($img); }
+
+@mixin replace-img($img, $w, $h) {
+  width: $w;
+  height: $h;
+  background: url($img) no-repeat; }
+
+@mixin fixed-img-bg($width, $height, $img, $bp-x: 0, $bp-y: 0) {  
+  background: url("/images/#{$img}") $bp-x $bp-y no-repeat;
+  display: block;
+  width: $width;
+  height: $height; }
