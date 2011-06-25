@@ -457,7 +457,7 @@ body .removed {
 }
 /* line 45, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search {
-  border: 1px solid #6fa8cc;
+  border: 1px solid #84d5fa;
   border-top: none;
   height: 80px;
   position: relative;
@@ -474,7 +474,7 @@ body .removed {
   float: left;
   width: 63px;
   height: 80px;
-  border-right: 1px solid #6fa8cc;
+  border-right: 1px solid #84d5fa;
 }
 /* line 61, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights .flight_type label, #container #header .flight_search form#form_search_flights .flight_type input {
@@ -496,7 +496,7 @@ body .removed {
 #container #header .flight_search form#form_search_flights .submit_button {
   height: 80px;
   margin-left: 725px;
-  border-left: 1px solid #6fa8cc;
+  border-left: 1px solid #84d5fa;
 }
 /* line 73, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights .submit_button input[type="submit"] {
@@ -508,7 +508,7 @@ body .removed {
   height: 80px;
   float: left;
   padding-left: 10px;
-  border-right: 1px solid #6fa8cc;
+  border-right: 1px solid #84d5fa;
 }
 /* line 80, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights input.city_datepicker {
@@ -772,8 +772,8 @@ ul.share li a:hover {
 /* line 1, ../../app/stylesheets/partials/_partners.scss */
 #bottom {
   clear: left;
-  border-left: 1px solid #6fa8cc;
-  border-right: 1px solid #6fa8cc;
+  border-left: 1px solid #84d5fa;
+  border-right: 1px solid #84d5fa;
 }
 /* line 5, ../../app/stylesheets/partials/_partners.scss */
 #bottom .partners_box {
@@ -882,8 +882,8 @@ body #top.fixed {
   padding-top: 30px;
   background: url(/images/map-bg-p.png) no-repeat;
   background-position: 20px 30px;
-  border-left: 1px solid #6fa8cc;
-  border-right: 1px solid #6fa8cc;
+  border-left: 1px solid #84d5fa;
+  border-right: 1px solid #84d5fa;
 }
 
 /* line 50, ../../app/stylesheets/screen.scss */
