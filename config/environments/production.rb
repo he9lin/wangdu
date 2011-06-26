@@ -1,3 +1,5 @@
+require File.expand_path('../../../lib/refresh_timer', __FILE__)
+
 Tugo::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
