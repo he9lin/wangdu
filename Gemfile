@@ -15,6 +15,7 @@ gem 'httparty'
 gem "jquery-rails", "0.2.6"
 gem "simple_form", :git => 'git://github.com/plataformatec/simple_form.git'
 gem 'inherited_resources', '1.1.2'
+gem 'eventmachine', '0.12.10'
 
 # Use unicorn as the web server
 # gem 'unicorn'
