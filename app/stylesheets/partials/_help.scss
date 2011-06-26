@@ -11,4 +11,11 @@
 		margin: 10px 0 0 20px;
 		.content_title{ font-weight: bold; } 
 		.content.intro{ 
-			img{ width: 420px; height: 280px; } } } }
+		  font-size: 1.2em;
+		  background: #fff;
+		  padding: 15px;
+		  width: 500px;
+		  border: 1px solid $light-blue-color;
+		  span.title { color: $blue-color; font-weight: bold; }
+		  .left { float: left; padding-right: 15px; }
+			img{ } } } }

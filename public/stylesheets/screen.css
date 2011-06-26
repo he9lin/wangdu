@@ -578,10 +578,23 @@ body .removed {
 .helps #help_right .content_title {
   font-weight: bold;
 }
-/* line 14, ../../app/stylesheets/partials/_help.scss */
-.helps #help_right .content.intro img {
-  width: 420px;
-  height: 280px;
+/* line 13, ../../app/stylesheets/partials/_help.scss */
+.helps #help_right .content.intro {
+  font-size: 1.2em;
+  background: #fff;
+  padding: 15px;
+  width: 500px;
+  border: 1px solid #80c4e5;
+}
+/* line 19, ../../app/stylesheets/partials/_help.scss */
+.helps #help_right .content.intro span.title {
+  color: #56cded;
+  font-weight: bold;
+}
+/* line 20, ../../app/stylesheets/partials/_help.scss */
+.helps #help_right .content.intro .left {
+  float: left;
+  padding-right: 15px;
 }
 
 /* line 1, ../../app/stylesheets/partials/_widget.scss */
