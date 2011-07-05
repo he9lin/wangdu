@@ -17,6 +17,8 @@
 
 .flight_date p { margin: 0; }
 ul li{ list-style: none; }
+.ui-accordion .ui-accordion-header a { font-size: 1.3em; }
+.ui-accordion .ui-accordion-content { font-size: 1.2em; }
 
 h3{
 	font-family: $blueprint-font-family;
@@ -33,6 +35,11 @@ body{
 		height: 125px;
 		width: 100%;
 		z-index: -1; } }
+		
+#container_wrapper{ 
+  background: url("/images/bg-dang.jpg") repeat-x;
+  background-position: 0 355px;
+}
 
 #container{ 
 	@include container; 
