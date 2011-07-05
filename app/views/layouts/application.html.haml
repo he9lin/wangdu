@@ -17,10 +17,11 @@
     ~ csrf_meta_tag
   %body.home
     #top.fixed
-    #container
-      = render 'shared/header'
-      #main
-        #content
-          = yield
-        = render 'shared/sider'
-      = render 'shared/footer'
+    #container_wrapper
+      #container
+        = render 'shared/header'
+        #main
+          #content
+            = yield
+          = render 'shared/sider'
+        = render 'shared/footer'
