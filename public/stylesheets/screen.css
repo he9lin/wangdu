@@ -608,7 +608,7 @@ body .removed {
 }
 /* line 6, ../../app/stylesheets/partials/_widget.scss */
 .tab_box .ui-widget-header {
-  height: 27px;
+  height: 31px;
   font-size: 1.2em;
 }
 /* line 7, ../../app/stylesheets/partials/_widget.scss */
@@ -943,50 +943,54 @@ body #top.fixed {
   margin: 5px 10px 10px 0;
 }
 /* line 70, ../../app/stylesheets/screen.scss */
+.search_result .simple_table.ui-widget {
+  font-size: 1.0em;
+}
+/* line 71, ../../app/stylesheets/screen.scss */
 .search_result .simple_table .header {
   background-color: #f5f5f5;
 }
-/* line 71, ../../app/stylesheets/screen.scss */
+/* line 72, ../../app/stylesheets/screen.scss */
 .search_result .simple_table tr.detail_flight td {
   background-color: #eaf7ff;
   color: #a3620a;
 }
-/* line 74, ../../app/stylesheets/screen.scss */
+/* line 75, ../../app/stylesheets/screen.scss */
 .search_result .simple_table tr.detail_flight td ul li {
   float: left;
   margin: 0 10px;
   list-style-type: none;
 }
-/* line 76, ../../app/stylesheets/screen.scss */
+/* line 77, ../../app/stylesheets/screen.scss */
 .search_result .simple_table td.airline {
   width: 100px;
 }
-/* line 77, ../../app/stylesheets/screen.scss */
+/* line 78, ../../app/stylesheets/screen.scss */
 .search_result .simple_table td.airport {
   width: 100px;
 }
-/* line 79, ../../app/stylesheets/screen.scss */
+/* line 80, ../../app/stylesheets/screen.scss */
 .search_result .simple_table td span.price {
   color: #a3620a;
   font-weight: bold;
 }
-/* line 80, ../../app/stylesheets/screen.scss */
+/* line 81, ../../app/stylesheets/screen.scss */
 .search_result .simple_table td span.discount {
   color: #8fc644;
 }
 
-/* line 82, ../../app/stylesheets/screen.scss */
+/* line 83, ../../app/stylesheets/screen.scss */
 #cities_tabs {
   width: 320px;
   height: 200px;
   clear: left;
 }
-/* line 86, ../../app/stylesheets/screen.scss */
+/* line 87, ../../app/stylesheets/screen.scss */
 #cities_tabs .city_selects {
   padding: 0;
   margin: 0;
 }
-/* line 89, ../../app/stylesheets/screen.scss */
+/* line 90, ../../app/stylesheets/screen.scss */
 #cities_tabs .city_selects .city_select {
   cursor: pointer;
   float: left;
@@ -996,11 +1000,11 @@ body #top.fixed {
   width: 50px;
 }
 
-/* line 97, ../../app/stylesheets/screen.scss */
+/* line 98, ../../app/stylesheets/screen.scss */
 .flight_dates {
   height: 55px;
 }
-/* line 99, ../../app/stylesheets/screen.scss */
+/* line 100, ../../app/stylesheets/screen.scss */
 .flight_dates .flight_date {
   float: left;
   padding: 0 22px;
@@ -1009,27 +1013,27 @@ body #top.fixed {
   cursor: pointer;
   border: 1px solid #80c4e5;
 }
-/* line 106, ../../app/stylesheets/screen.scss */
+/* line 107, ../../app/stylesheets/screen.scss */
 .flight_dates .flight_date:hover {
   background-color: #a8dcfb;
 }
-/* line 107, ../../app/stylesheets/screen.scss */
+/* line 108, ../../app/stylesheets/screen.scss */
 .flight_dates .flight_date.current {
   background-color: #80c4e5;
   border-bottom: none;
 }
-/* line 110, ../../app/stylesheets/screen.scss */
+/* line 111, ../../app/stylesheets/screen.scss */
 .flight_dates .flight_date p.year {
   visibility: hidden;
   height: 0px;
 }
-/* line 111, ../../app/stylesheets/screen.scss */
+/* line 112, ../../app/stylesheets/screen.scss */
 .flight_dates .flight_date p.lowest_price {
   float: left;
   width: 34px;
   font-weight: bold;
 }
-/* line 115, ../../app/stylesheets/screen.scss */
+/* line 116, ../../app/stylesheets/screen.scss */
 .flight_dates .flight_date div.discount_existed {
   background: url(/images/lowPrice.gif);
   width: 15px;
@@ -1037,12 +1041,12 @@ body #top.fixed {
   margin-left: 35px;
 }
 
-/* line 121, ../../app/stylesheets/screen.scss */
+/* line 122, ../../app/stylesheets/screen.scss */
 .clearfix {
   clear: both;
 }
 
-/* line 122, ../../app/stylesheets/screen.scss */
+/* line 123, ../../app/stylesheets/screen.scss */
 .meta {
   color: #a0a0a0;
 }

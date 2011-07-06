@@ -67,6 +67,7 @@ body{
 	.simple_table{ 
 		clear: left; 
 		margin: 5px 10px 10px 0;
+		&.ui-widget{ font-size: 1.0em; }
 		.header{ background-color: $blueprint-background-color; } 
 		tr.detail_flight td{ 
 			background-color: $blue-bg-color; 
