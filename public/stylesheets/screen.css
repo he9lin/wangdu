@@ -567,10 +567,6 @@ body .removed {
 .helps {
   margin: 15px;
 }
-/* line 4, ../../app/stylesheets/partials/_help.scss */
-.helps #help_left .ui-button-text {
-  color: white;
-}
 /* line 7, ../../app/stylesheets/partials/_help.scss */
 .helps #help_left a.ui-button {
   margin: 0 6px;
@@ -899,7 +895,7 @@ body #top.fixed {
 
 /* line 39, ../../app/stylesheets/screen.scss */
 #container_wrapper {
-  background: url("/images/bg-dang.jpg") repeat-x;
+  background: url("/images/bg-y.png") repeat-x;
   background-position: 0 355px;
 }
 
