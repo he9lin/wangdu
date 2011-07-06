@@ -1,4 +1,5 @@
 module ApplicationHelper
+  include ActionView::Helpers::SwfFuHelper
   
   def stylesheet(*args)
     content_for(:head) { stylesheet_link_tag(*args) }

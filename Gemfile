@@ -16,6 +16,7 @@ gem "jquery-rails", "0.2.6"
 gem "simple_form", :git => 'git://github.com/plataformatec/simple_form.git'
 gem 'inherited_resources', '1.1.2'
 gem 'eventmachine', '0.12.10'
+gem 'swf_fu', '>=1.3.2', :require => "swf_fu"
 
 # Use unicorn as the web server
 # gem 'unicorn'
