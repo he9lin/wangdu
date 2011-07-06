@@ -582,6 +582,7 @@ body .removed {
 /* line 12, ../../app/stylesheets/partials/_help.scss */
 .helps #help_right .content_title {
   font-weight: bold;
+  color: #107d9a;
 }
 /* line 13, ../../app/stylesheets/partials/_help.scss */
 .helps #help_right .content.intro {
@@ -1006,7 +1007,7 @@ body #top.fixed {
 /* line 99, ../../app/stylesheets/screen.scss */
 .flight_dates .flight_date {
   float: left;
-  padding: 0 25px;
+  padding: 0 22px;
   margin: 0 1px;
   background-color: #eaf7ff;
   cursor: pointer;

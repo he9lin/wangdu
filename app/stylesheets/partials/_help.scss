@@ -9,7 +9,7 @@
 		} }
 	#help_right{
 		margin: 10px 0 0 20px;
-		.content_title{ font-weight: bold; } 
+		.content_title{ font-weight: bold; color: darken($blue-color, 30%); } 
 		.content.intro{ 
 		  font-size: 1.2em;
 		  background: #fff;
