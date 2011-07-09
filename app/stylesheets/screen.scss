@@ -26,8 +26,8 @@ h3{
 	font-size: 1.2em; }
 	
 body{ 
-	background-color: $blue-bg-color;
-	background: url(/images/head_bg.png) repeat-x;
+	background: url(/images/united_blue_bg_754px.jpg) no-repeat;
+	background-color: $united-blue-bg-color;
 	#top.fixed{
 		position: absolute;
 		left: 0;
@@ -37,26 +37,28 @@ body{
 		z-index: -1; } }
 		
 #container_wrapper{ 
-  background: url("/images/bg-y.png") repeat-x;
-  background-position: 0 355px;
+  //background: url("/images/bg-y.png") repeat-x;
+  //background-position: 0 355px;
 }
 
 #container{ 
 	@include container; 
 	position: relative;
-	background-color: white;
+	overflow: hidden;
+  overflow: visible	9;
+  zoom: 1;
+  margin: 0 auto;
+  padding: 0 7px;
+  width: 970px	9;
+	background: url(/images/inset_layout.png) repeat-y;
 	#main{ 
 		float: left;
 		width: 958px;
-		padding-top: 30px;
-		background: url(/images/map-bg-p.png) no-repeat;
-		background-position: 20px 30px;
-		border-left: 1px solid $blue-border-color; 
-		border-right: 1px solid $blue-border-color; } }
+		padding-top: 10px; } }
 	
 #content{ 
 	float: left;
-	width: 750px;  
+	width: 735px;  
 	min-height: 550px;
 	background-position: 40px 30px;
 	.swf_adv{ 
@@ -69,7 +71,7 @@ body{
 
 .search_result{ 
 	width: 700px; 
-	margin: 0 20px;	
+	margin: 15px 20px;	
 	#dto_header h3{ font-weight: bold; margin-left: 10px; }
 	.simple_table{ 
 		clear: left; 

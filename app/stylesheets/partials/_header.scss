@@ -1,21 +1,29 @@
 #container #header {
 	background-color: white;
+	.mid_nav{
+	  //background: url(/images/global-nav-gradient.gif) repeat-x;
+	  background-color: $blue-bg-color;
+	  border-bottom: 1px solid $lighter-blue-color;
+	  padding: 10px;
+	}
 	.top_header{  
-		height: 350px;
+		height: 270px;
 		width: 960px;
 		background: url(/images/head_bg.png) repeat-x;
+		background-position-y: -80px; 
 		border-bottom: 5px solid $light-blue-color;
 		.logo_l{ 
 			float: left;
-			height: 350px;
+			height: 270px;
 			width: 450px;
 			background: url(/images/toppic_L.png) no-repeat;
-		}
+			background-position-y: -80px; }
 	  .logo_r { 
-			height: 350px; 
+			height: 270px; 
 			width: 450px; 
 			float: left; 
-			background: url(/images/toppic_R.png) no-repeat; }
+			background: url(/images/toppic_R.png) no-repeat; 
+			background-position-y: -80px; } 
 		.title_header{
 			padding: 15px 0 0 160px;
 			position: relative;
@@ -38,7 +46,7 @@
 				font-size: 1.8em;  
 				position: absolute;
 				left: 40px;
-				top: 300px;
+				top: 220px;
 				color: $dark-red-color;
 				.tel{ float: left; background: url(/images/icon.png); width: 16px; height:16px; margin-top: 10px; }
 				.number{ color: $purple-color; margin-left: 30px; width: 200px;} } } }

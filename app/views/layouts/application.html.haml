@@ -21,8 +21,8 @@
       #container
         = render 'shared/header'
         #main
+          = render 'shared/sider'
           #content
             .content_inner= yield
-            .swf_adv= swf_tag "adv", :size => "680x225"
-          = render 'shared/sider'
+            /.swf_adv= swf_tag "adv", :size => "680x225"
         = render 'shared/footer'

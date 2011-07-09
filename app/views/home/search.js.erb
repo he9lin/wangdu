@@ -1,4 +1,4 @@
 App.closeGlobalLoadingDialog();
 $("#form_search_flights").removeAttr('disabled');
-$("#content").html("<%= escape_javascript( render 'flights' )%>");
+$("#content .content_inner").html("<%= escape_javascript( render 'flights' )%>");
 $("tr.detail_flight").hide();

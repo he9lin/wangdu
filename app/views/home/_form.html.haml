@@ -2,17 +2,18 @@
   .flight_type
     ~ radio_button_tag 'flight_type', 'depart'
     ~ label_tag '单程'
-    %br
     ~ radio_button_tag 'flight_type', 'return'
     ~ label_tag '往返'
   .schedule
     出发城市:
     ~ text_field_tag "depart_city", "", :class=>"city current", :value => "成都"
+    %br
     到达城市:
     ~ text_field_tag "arrival_city", "", :class=>"city", :value => "北京"
     %br
     出发日期:
     ~ text_field_tag "datepicker_depart", "", :class=>"city_datepicker"
+    %br
     返回日期:
     ~ text_field_tag "datepicker_return", "", :class=>"city_datepicker"
   .types

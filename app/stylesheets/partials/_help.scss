@@ -9,12 +9,18 @@
 		} }
 	#help_right{
 		margin: 10px 0 0 20px;
+		#intro_image{ 
+		  margin-top: 70px;
+		  background: url(/images/map-bg-p.png) no-repeat; 
+		  background-position-x: -80px; 
+		  width: 680px; 
+		  height: 400px; }
 		.content_title{ font-weight: bold; color: darken($blue-color, 30%); } 
 		.content.intro{ 
 		  font-size: 1.2em;
 		  background: #fff;
 		  padding: 15px;
-		  width: 500px;
+		  //width: 500px;
 		  border: 1px solid $light-blue-color;
 		  span.title { color: $blue-color; font-weight: bold; }
 		  .left { float: left; padding-right: 15px; }

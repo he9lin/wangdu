@@ -1,11 +1,21 @@
-.tab_box{
-	width: 190px;
-	margin-left: 750px;
-	margin-top: 20px;
-	background-color: white;
-	.ui-widget-header { height: 31px; font-size: 1.2em;}
-	.ui-tabs-panel { padding: 1em 0 0 0; font-size: 1.1em; }
-	.tab_box_body{ } }
+.sider{ 
+  margin-left: 20px; 
+  margin-top: 5px;
+  float: left;
+  .tab_box{
+  	width: 190px;
+  	margin-top: 10px;
+  	margin-bottom: 10px;
+  	background-color: white;
+  	.ui-widget-header { height: 31px; font-size: 1.2em;}
+  	.ui-tabs-panel { padding: 1em 0 0 0; font-size: 1.1em; }
+  	.tab_box_body{
+  	  .flight_search{ 
+  	    margin: 10px; 
+  	    margin-top: 0px;
+  	    font-size: 1.1em;
+  	    #airline_airline_id{ width: 100px; }
+  	    input.city, input.city_datepicker{ width: 100px; } } } } }
 
 .widget_box{
 	width: 190px;

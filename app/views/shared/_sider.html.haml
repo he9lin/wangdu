@@ -1,3 +1,8 @@
-~ tab_box "新浪微博及时动态", :id => "weibo", :link => static_url(:cat => "weibo")
-~ tab_box "合作伙伴", :id => "companies", :link => static_url(:cat => "companies")
+.sider
+  ~ tab_box "查询机票", :id => "flight_search" do
+    .flight_search    
+      ~ cities_dialog
+      ~ render 'home/form'
+  ~ tab_box "新浪微博及时动态", :id => "weibo", :link => static_url(:cat => "weibo")
+  ~ tab_box "合作伙伴", :id => "companies", :link => static_url(:cat => "companies")
   
