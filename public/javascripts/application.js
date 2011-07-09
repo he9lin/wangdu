@@ -19,7 +19,7 @@ var App = {
       },
       
       'ajax:loading' : function(xhr) {
-        $(this).attr('disabled', 'disabled');
+        //$(this).attr('disabled', 'disabled');
 				$("#global_loading").dialog('open');
       }
     })
@@ -38,7 +38,7 @@ var App = {
 		//$( "input.city" ).autocomplete({ source: availableTags });
 		$( "#global_loading" ).dialog({ height: 55, modal: true, autoOpen: false, title: '正在读取数据...', show: "fade", hide: "fade" });
 		$( "#cities_tabs" ).tabs();
-		$( "#cities_tabs" ).dialog({title: '请选择一个城市', width: 322, position: [350, 160], autoOpen: false, show: "fade", hide: "fade"});
+		$( "#cities_tabs" ).dialog({title: '请选择一个城市', width: 322, position: [300, 200], autoOpen: false, show: "fade", hide: "fade"});
 		$( "#search_button").button();
 		$( "#datepicker_depart" ).datepicker({ defaultDate: +1, numberOfMonths: 2, minDate: 0, showAnim: 'fade' });
 		$( "#datepicker_return" ).datepicker({ defaultDate: +7, numberOfMonths: 2, minDate: 0, showAnim: 'fade' });

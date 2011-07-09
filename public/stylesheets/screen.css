@@ -645,39 +645,43 @@ body .removed {
   font-size: 1.1em;
 }
 /* line 17, ../../app/stylesheets/partials/_widget.scss */
+.sider .tab_box .tab_box_body .flight_search #search_button {
+  margin-top: 5px;
+}
+/* line 18, ../../app/stylesheets/partials/_widget.scss */
 .sider .tab_box .tab_box_body .flight_search #airline_airline_id {
   width: 100px;
 }
-/* line 18, ../../app/stylesheets/partials/_widget.scss */
+/* line 19, ../../app/stylesheets/partials/_widget.scss */
 .sider .tab_box .tab_box_body .flight_search input.city, .sider .tab_box .tab_box_body .flight_search input.city_datepicker {
   width: 100px;
 }
 
-/* line 20, ../../app/stylesheets/partials/_widget.scss */
+/* line 21, ../../app/stylesheets/partials/_widget.scss */
 .widget_box {
   width: 190px;
   margin-left: 750px;
   margin-top: 20px;
   background-color: white;
 }
-/* line 25, ../../app/stylesheets/partials/_widget.scss */
+/* line 26, ../../app/stylesheets/partials/_widget.scss */
 .widget_box .widget_head {
   height: 24px;
 }
-/* line 27, ../../app/stylesheets/partials/_widget.scss */
+/* line 28, ../../app/stylesheets/partials/_widget.scss */
 .widget_box .widget_head h3 {
   height: 20px;
   font-size: 1.2em;
   padding: 2px;
   padding-left: 10px;
 }
-/* line 32, ../../app/stylesheets/partials/_widget.scss */
+/* line 33, ../../app/stylesheets/partials/_widget.scss */
 .widget_box .widget_body {
   min-height: 80px;
   padding: 4px;
   border: 1px solid #80c4e5;
 }
-/* line 37, ../../app/stylesheets/partials/_widget.scss */
+/* line 38, ../../app/stylesheets/partials/_widget.scss */
 .widget_box .widget_body ul li {
   list-style: none;
   margin-bottom: 2px;
