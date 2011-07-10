@@ -470,7 +470,7 @@ body .removed {
 #container #header .top_header .title_header .phone .number {
   color: #7f4098;
   margin-left: 30px;
-  width: 200px;
+  width: 400px;
 }
 /* line 62, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search {
