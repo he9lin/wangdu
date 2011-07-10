@@ -391,10 +391,18 @@ body .removed {
 /* line 3, ../../app/stylesheets/partials/_header.scss */
 #container #header .mid_nav {
   background-color: #eaf7ff;
-  border-bottom: 1px solid #a8dcfb;
-  padding: 10px;
+  border-bottom: 1px solid #b9edff;
+  padding: 3px 10px 3px 10px;
+  font-size: 1.4em;
 }
 /* line 9, ../../app/stylesheets/partials/_header.scss */
+#container #header .mid_nav a {
+  border-right: 1px solid #a8dcfb;
+  text-decoration: none;
+  padding-left: 6px;
+  padding-right: 10px;
+}
+/* line 18, ../../app/stylesheets/partials/_header.scss */
 #container #header .top_header {
   height: 270px;
   width: 960px;
@@ -402,7 +410,7 @@ body .removed {
   background-position-y: -80px;
   border-bottom: 5px solid #80c4e5;
 }
-/* line 15, ../../app/stylesheets/partials/_header.scss */
+/* line 24, ../../app/stylesheets/partials/_header.scss */
 #container #header .top_header .logo_l {
   float: left;
   height: 270px;
@@ -410,7 +418,7 @@ body .removed {
   background: url(/images/toppic_L.png) no-repeat;
   background-position-y: -80px;
 }
-/* line 21, ../../app/stylesheets/partials/_header.scss */
+/* line 30, ../../app/stylesheets/partials/_header.scss */
 #container #header .top_header .logo_r {
   height: 270px;
   width: 450px;
@@ -418,12 +426,12 @@ body .removed {
   background: url(/images/toppic_R.png) no-repeat;
   background-position-y: -80px;
 }
-/* line 27, ../../app/stylesheets/partials/_header.scss */
+/* line 36, ../../app/stylesheets/partials/_header.scss */
 #container #header .top_header .title_header {
   padding: 15px 0 0 160px;
   position: relative;
 }
-/* line 30, ../../app/stylesheets/partials/_header.scss */
+/* line 39, ../../app/stylesheets/partials/_header.scss */
 #container #header .top_header .title_header a {
   width: 125px;
   height: 80px;
@@ -437,11 +445,11 @@ body .removed {
   font-size: 1.3em;
   color: #FDF;
 }
-/* line 43, ../../app/stylesheets/partials/_header.scss */
+/* line 52, ../../app/stylesheets/partials/_header.scss */
 #container #header .top_header .title_header a.intro {
   left: 730px;
 }
-/* line 44, ../../app/stylesheets/partials/_header.scss */
+/* line 53, ../../app/stylesheets/partials/_header.scss */
 #container #header .top_header .title_header .phone {
   padding-left: 5px;
   font-size: 1.8em;
@@ -450,7 +458,7 @@ body .removed {
   top: 220px;
   color: #a3620a;
 }
-/* line 51, ../../app/stylesheets/partials/_header.scss */
+/* line 60, ../../app/stylesheets/partials/_header.scss */
 #container #header .top_header .title_header .phone .tel {
   float: left;
   background: url(/images/icon.png);
@@ -458,31 +466,31 @@ body .removed {
   height: 16px;
   margin-top: 10px;
 }
-/* line 52, ../../app/stylesheets/partials/_header.scss */
+/* line 61, ../../app/stylesheets/partials/_header.scss */
 #container #header .top_header .title_header .phone .number {
   color: #7f4098;
   margin-left: 30px;
   width: 200px;
 }
-/* line 53, ../../app/stylesheets/partials/_header.scss */
+/* line 62, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search {
   border: 1px solid #84d5fa;
   border-top: none;
   height: 80px;
   position: relative;
 }
-/* line 59, ../../app/stylesheets/partials/_header.scss */
+/* line 68, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights {
   margin-left: 6px;
   font-size: 1.2em;
   font-weight: bold;
   background: url("/images/back.jpg") repeat-x;
 }
-/* line 64, ../../app/stylesheets/partials/_header.scss */
+/* line 73, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights input[type="text"] {
   font-size: 1.15em;
 }
-/* line 65, ../../app/stylesheets/partials/_header.scss */
+/* line 74, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights .flight_type {
   padding-left: 6px;
   float: left;
@@ -490,33 +498,33 @@ body .removed {
   height: 80px;
   border-right: 1px solid #84d5fa;
 }
-/* line 71, ../../app/stylesheets/partials/_header.scss */
+/* line 80, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights .flight_type label, #container #header .flight_search form#form_search_flights .flight_type input {
   line-height: 20px;
   margin-top: 10px;
 }
-/* line 72, ../../app/stylesheets/partials/_header.scss */
+/* line 81, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights .types {
   margin-left: 10px;
   width: 210px;
   height: 80px;
   float: left;
 }
-/* line 77, ../../app/stylesheets/partials/_header.scss */
+/* line 86, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights .types .direct_flag {
   line-height: 40px;
 }
-/* line 79, ../../app/stylesheets/partials/_header.scss */
+/* line 88, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights .submit_button {
   height: 80px;
   margin-left: 725px;
   border-left: 1px solid #84d5fa;
 }
-/* line 83, ../../app/stylesheets/partials/_header.scss */
+/* line 92, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights .submit_button input[type="submit"] {
   margin: 25px 0 0 50px;
 }
-/* line 84, ../../app/stylesheets/partials/_header.scss */
+/* line 93, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights .schedule {
   width: 425px;
   height: 80px;
@@ -524,12 +532,12 @@ body .removed {
   padding-left: 10px;
   border-right: 1px solid #84d5fa;
 }
-/* line 90, ../../app/stylesheets/partials/_header.scss */
+/* line 99, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights input.city_datepicker {
   background: url(/images/cal.png) no-repeat;
   background-position: 100px 4px;
 }
-/* line 94, ../../app/stylesheets/partials/_header.scss */
+/* line 103, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights input[type="text"] {
   background-color: #dbf1fe;
   width: 118px;

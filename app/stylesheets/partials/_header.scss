@@ -3,8 +3,17 @@
 	.mid_nav{
 	  //background: url(/images/global-nav-gradient.gif) repeat-x;
 	  background-color: $blue-bg-color;
-	  border-bottom: 1px solid $lighter-blue-color;
-	  padding: 10px;
+	  border-bottom: 1px solid $lighter-blue-color + #111;
+	  padding: 3px 10px 3px 10px;
+	  font-size: 1.4em;
+	  a{ 
+	    border-right: 1px solid $lighter-blue-color; 
+	    text-decoration: none;
+	    padding-left: 6px;
+	    padding-right: 10px;
+	    &:hover{  }
+	    &:last-child{ }
+	    }
 	}
 	.top_header{  
 		height: 270px;
