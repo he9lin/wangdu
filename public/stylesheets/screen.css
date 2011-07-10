@@ -407,7 +407,7 @@ body .removed {
   height: 270px;
   width: 960px;
   background: url(/images/head_bg.png) repeat-x;
-  background-position-y: -80px;
+  background-position: 0 -80px;
   border-bottom: 5px solid #80c4e5;
 }
 /* line 24, ../../app/stylesheets/partials/_header.scss */
@@ -416,7 +416,7 @@ body .removed {
   height: 270px;
   width: 450px;
   background: url(/images/toppic_L.png) no-repeat;
-  background-position-y: -80px;
+  background-position: 0 -80px;
 }
 /* line 30, ../../app/stylesheets/partials/_header.scss */
 #container #header .top_header .logo_r {
@@ -424,7 +424,7 @@ body .removed {
   width: 450px;
   float: left;
   background: url(/images/toppic_R.png) no-repeat;
-  background-position-y: -80px;
+  background-position: 0 -80px;
 }
 /* line 36, ../../app/stylesheets/partials/_header.scss */
 #container #header .top_header .title_header {
