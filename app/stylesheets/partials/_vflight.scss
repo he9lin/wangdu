@@ -1,0 +1,42 @@
+.vflight{ 
+  width: 307px; float: left; 
+  .text_input{
+    input[type=text]{  width: 45px; }
+  }
+}
+
+#container1 ,#container2{ width:300px; height:184px; background: none; font-size: 12px; border: 0px dashed #ccc; overflow: hidden; font-family: Arial, Helvetica, sans-serif; }
+#container1 div,#container2 div{ height: 184px; overflow: hidden; }
+#container1 div ul,#container2 div ul{ list-style: none; }
+#container1 div li,#container2 div li{ padding: 0px 0; float: left; width: 50%; }
+#container1 div li.selected,#container2 div li.selected{ float: right; }
+#container1 div li.selected a:link,#container1 div li.selected a:visited,#container2 div li.selected a:link,#container2 div li.selected a:visited{ color: #c00; }
+#container1 div li u ,#container2 div li u { width:300px; text-decoration: none; line-height: 150%; height: 112px; border: 0; float: left; margin-top: 6px; }
+#container1 div a:link,.container1 div a:visited,#container2 div a:link,.container2 div a:visited{ color: #009; text-decoration: none; }
+#container1 div a:hover,#container2 div a:hover{ color: #c00; text-decoration: none; }
+
+.tab{clear:both;  margin-top:6px;  padding:0px; margin:0px;}
+.tab tr{border:0;}
+.tab td{padding:0px; border:0; color:#000;}
+
+.hbdt_top{ font-size:12px; margin-top:0px; color:#fff; font-weight:800; padding:0 2px 6px 20px;}
+.title{color:#fff;  clear:both; font-size:12px; padding:11px 0px 0px 2px; margin:0px;}
+.title ul{ margin:0; padding:0;}
+.title li{list-style:none; line-height:130%; overflow:hidden; padding-top:0px; padding-bottom:0px; }
+.title span{ font-family: Arial, Helvetica, sans-serif; font-style:normal; font-size:12px;  float:left}
+.title span { width:48px; text-align:center;  }
+
+.hbdt{color:#fff; padding-left:5px;  clear:both; font-size:12px;  margin-top:4px; }
+.hbdt ul{ margin:0; padding:0;}
+.hbdt li{list-style:none; color:#fff; margin:0px; padding:0px;  line-height:23px;}
+.hbdt span{ font-family: Arial, Helvetica, sans-serif; font-style:normal; font-size:12px; float: left;}
+.hbdt span {  width:48px; text-align:center; }
+.style1{ color:#f90;}
+
+
+.text_input{text-align:center;  font-size:12px; margin-top:7px }
+.text{ background:#eee; border:1px solid #c90; color:#000; height:18px}
+.text1{ height:15px;}
+.soti01{ color:#f90}
+
+.menhead{background:#fff;}

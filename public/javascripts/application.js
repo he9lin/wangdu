@@ -40,7 +40,7 @@ var App = {
 		$( "#cities_tabs" ).tabs();
 		$( "#cities_tabs" ).dialog({title: '请选择一个城市', width: 322, position: [300, 200], autoOpen: false, show: "fade", hide: "fade"});
 		$( "#search_button").button();
-		$( "#datepicker_depart" ).datepicker({ defaultDate: +1, numberOfMonths: 2, minDate: 0, showAnim: 'fade' });
+		$( "#datepicker_depart" ).datepicker({ defaultDate: +1, numberOfMonths: 2, minDate: 0, showAnim: 'fade', create: function(event, ui) { console.log("ss") } });
 		$( "#datepicker_return" ).datepicker({ defaultDate: +7, numberOfMonths: 2, minDate: 0, showAnim: 'fade' });
 		$( "#direct_flag_all" ).attr("checked", "true");
 		$( "#flight_type_return" ).attr("checked", "true");

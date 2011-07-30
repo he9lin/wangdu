@@ -6,7 +6,17 @@
 @import "partials/share";
 @import "partials/slides";
 @import "partials/partners";
+@import "partials/vflight";
 
+.gonggao{ 
+  float: left; width: 380px; margin-left: 15px;
+  .ui-widget { font-size: 1.0em; } }
+.travel{ 
+  float: left; width: 307px; margin-left: 15px;
+  .ui-widget { font-size: 1.0em; } }
+.tickets{
+  float: left; width: 702px; margin-left: 15px; margin-top: 15px;
+  .ui-widget { font-size: 1.0em; } }
 
 .ui-widget {
 	font-family: $blueprint-font-family;
@@ -66,8 +76,7 @@ body{
 	  //background-color: $blue-color;
 	  width: 685px;
 	  margin: 20px; 
-	  border: 2px solid $blue-border-color;
-	} }
+	  border: 2px solid $blue-border-color; } }
 
 .search_result{ 
 	width: 700px; 

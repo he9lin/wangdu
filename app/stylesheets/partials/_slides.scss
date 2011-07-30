@@ -1,5 +1,8 @@
 #slides {
-	margin: 15px;
+	margin: 0 15px 15px 15px;
+	border: 1px solid $light-border-color;
+	background-color: $blue-bg-color;
+	float: left;
   ul.pagination {
     height: 20px;
     margin-top: 5px;
@@ -16,12 +19,12 @@
         display: inline-block;
         margin: 0 2px; } } }
   .slides_container {
-    width:428px;
-    height:170px;
+    width:380px;
+    height:255px;
     div {
-      width:428px;
-      height:170px;
+      width:380px;
+      height:255px;
       display:block;
       img {
-        width:428px;
-        height:170px; } } } }
+        width:380px;
+        height:255px; } } } }

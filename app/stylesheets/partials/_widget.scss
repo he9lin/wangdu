@@ -1,3 +1,7 @@
+.ui-tabs-nav{ padding: 0; }
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active{ border: none; background: none; color: $blue-color; }
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited{  color: $purple-color; }
+
 .sider{ 
   margin-left: 20px; 
   margin-top: 5px;
@@ -7,8 +11,12 @@
   	margin-top: 10px;
   	margin-bottom: 10px;
   	background-color: white;
-  	.ui-widget-header { height: 31px; font-size: 1.2em;}
+  	> ul { background-color: $light-blue-color; }
+  	.ui-widget-header { height: 28px; font-size: 1.2em; border: none;}
   	.ui-tabs-panel { padding: 1em 0 0 0; font-size: 1.1em; }
+  	.ui-state-active { border: none; background: none; color: $blue-color; }
+  	.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited{  color: $purple-color; }
+  	.ui-tabs .ui-tabs-nav{ padding: 0; }
   	.tab_box_body{
   	  .flight_search{ 
   	    margin: 10px; 

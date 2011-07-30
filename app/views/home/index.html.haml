@@ -1,2 +1,11 @@
-~ render :partial => 'help/helps', :locals => { :category => params['cat'] }
+.helps
+#slides
+  .slides_container
+    %div= image_tag('jiuzhaigou.jpg')
+    %div= image_tag('plane.jpg')
+    %div= image_tag('chengdu-airport.jpg')
+.vflight~ flight_status_box
+.gonggao~ tab_box "最新公告", :id => "announcement", :link => static_url(:cat => "announce")
+.travel~ tab_box "旅游咨询", :id => "travel", :link => static_url(:cat => "travel")
+.tickets~ tab_box "特价机票", :id => "tickets", :link => static_url(:cat => "tickets")
 ~ render 'flights'

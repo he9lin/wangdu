@@ -1,8 +1,8 @@
 #container #header {
 	background-color: white;
 	.mid_nav{
-	  //background: url(/images/global-nav-gradient.gif) repeat-x;
-	  background-color: $blue-bg-color;
+	  background: url(/images/nav-bg.png) repeat-x;
+	  //background-color: $blue-bg-color;
 	  border-bottom: 1px solid $lighter-blue-color + #111;
 	  padding: 3px 10px 3px 10px;
 	  font-size: 1.4em;
@@ -11,16 +11,26 @@
 	    text-decoration: none;
 	    padding-left: 6px;
 	    padding-right: 10px;
+	    font-weight: bold;
 	    &:hover{  }
-	    &:last-child{ }
-	    }
-	}
+	    &:last-child{ border: none; }  } }
+	//NOT USED 
 	.top_header{  
-		height: 270px;
+		height: 100px;
 		width: 960px;
 		background: url(/images/head_bg.png) repeat-x;
 		background-position: 0 -80px; 
-		border-bottom: 5px solid $light-blue-color;
+		//border-bottom: 5px solid $light-blue-color;
+		.logo{
+		  background: url(/images/blue-logo.png) no-repeat;
+		  background-position: 0 -20px;
+      width: 125px;
+      height: 100px;
+      img{
+        margin-left: 140px;
+        margin-top: 30px;
+      }
+		}
 		.logo_l{ 
 			float: left;
 			height: 270px;
@@ -34,7 +44,7 @@
 			background: url(/images/toppic_R.png) no-repeat; 
 			background-position: 0 -80px; } 
 		.title_header{
-			padding: 15px 0 0 160px;
+			padding: 0 0 0 0px;
 			position: relative;
 			a{ 	
 				width: 125px;
@@ -54,8 +64,8 @@
 				padding-left: 5px; 
 				font-size: 1.8em;  
 				position: absolute;
-				left: 40px;
-				top: 220px;
+				left: 530px;
+				top: 30px;
 				color: $dark-red-color;
 				.tel{ float: left; background: url(/images/icon.png); width: 16px; height:16px; margin-top: 10px; }
 				.number{ color: $purple-color; margin-left: 30px; width: 400px;} } } }

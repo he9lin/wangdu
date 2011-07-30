@@ -390,7 +390,7 @@ body .removed {
 }
 /* line 3, ../../app/stylesheets/partials/_header.scss */
 #container #header .mid_nav {
-  background-color: #eaf7ff;
+  background: url(/images/nav-bg.png) repeat-x;
   border-bottom: 1px solid #b9edff;
   padding: 3px 10px 3px 10px;
   font-size: 1.4em;
@@ -401,16 +401,32 @@ body .removed {
   text-decoration: none;
   padding-left: 6px;
   padding-right: 10px;
+  font-weight: bold;
+}
+/* line 16, ../../app/stylesheets/partials/_header.scss */
+#container #header .mid_nav a:last-child {
+  border: none;
 }
 /* line 18, ../../app/stylesheets/partials/_header.scss */
 #container #header .top_header {
-  height: 270px;
+  height: 100px;
   width: 960px;
   background: url(/images/head_bg.png) repeat-x;
   background-position: 0 -80px;
-  border-bottom: 5px solid #80c4e5;
 }
 /* line 24, ../../app/stylesheets/partials/_header.scss */
+#container #header .top_header .logo {
+  background: url(/images/blue-logo.png) no-repeat;
+  background-position: 0 -20px;
+  width: 125px;
+  height: 100px;
+}
+/* line 29, ../../app/stylesheets/partials/_header.scss */
+#container #header .top_header .logo img {
+  margin-left: 140px;
+  margin-top: 30px;
+}
+/* line 34, ../../app/stylesheets/partials/_header.scss */
 #container #header .top_header .logo_l {
   float: left;
   height: 270px;
@@ -418,7 +434,7 @@ body .removed {
   background: url(/images/toppic_L.png) no-repeat;
   background-position: 0 -80px;
 }
-/* line 30, ../../app/stylesheets/partials/_header.scss */
+/* line 40, ../../app/stylesheets/partials/_header.scss */
 #container #header .top_header .logo_r {
   height: 270px;
   width: 450px;
@@ -426,12 +442,12 @@ body .removed {
   background: url(/images/toppic_R.png) no-repeat;
   background-position: 0 -80px;
 }
-/* line 36, ../../app/stylesheets/partials/_header.scss */
+/* line 46, ../../app/stylesheets/partials/_header.scss */
 #container #header .top_header .title_header {
-  padding: 15px 0 0 160px;
+  padding: 0 0 0 0px;
   position: relative;
 }
-/* line 39, ../../app/stylesheets/partials/_header.scss */
+/* line 49, ../../app/stylesheets/partials/_header.scss */
 #container #header .top_header .title_header a {
   width: 125px;
   height: 80px;
@@ -445,20 +461,20 @@ body .removed {
   font-size: 1.3em;
   color: #FDF;
 }
-/* line 52, ../../app/stylesheets/partials/_header.scss */
+/* line 62, ../../app/stylesheets/partials/_header.scss */
 #container #header .top_header .title_header a.intro {
   left: 730px;
 }
-/* line 53, ../../app/stylesheets/partials/_header.scss */
+/* line 63, ../../app/stylesheets/partials/_header.scss */
 #container #header .top_header .title_header .phone {
   padding-left: 5px;
   font-size: 1.8em;
   position: absolute;
-  left: 40px;
-  top: 220px;
+  left: 530px;
+  top: 30px;
   color: #a3620a;
 }
-/* line 60, ../../app/stylesheets/partials/_header.scss */
+/* line 70, ../../app/stylesheets/partials/_header.scss */
 #container #header .top_header .title_header .phone .tel {
   float: left;
   background: url(/images/icon.png);
@@ -466,31 +482,31 @@ body .removed {
   height: 16px;
   margin-top: 10px;
 }
-/* line 61, ../../app/stylesheets/partials/_header.scss */
+/* line 71, ../../app/stylesheets/partials/_header.scss */
 #container #header .top_header .title_header .phone .number {
   color: #7f4098;
   margin-left: 30px;
   width: 400px;
 }
-/* line 62, ../../app/stylesheets/partials/_header.scss */
+/* line 72, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search {
   border: 1px solid #84d5fa;
   border-top: none;
   height: 80px;
   position: relative;
 }
-/* line 68, ../../app/stylesheets/partials/_header.scss */
+/* line 78, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights {
   margin-left: 6px;
   font-size: 1.2em;
   font-weight: bold;
   background: url("/images/back.jpg") repeat-x;
 }
-/* line 73, ../../app/stylesheets/partials/_header.scss */
+/* line 83, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights input[type="text"] {
   font-size: 1.15em;
 }
-/* line 74, ../../app/stylesheets/partials/_header.scss */
+/* line 84, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights .flight_type {
   padding-left: 6px;
   float: left;
@@ -498,33 +514,33 @@ body .removed {
   height: 80px;
   border-right: 1px solid #84d5fa;
 }
-/* line 80, ../../app/stylesheets/partials/_header.scss */
+/* line 90, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights .flight_type label, #container #header .flight_search form#form_search_flights .flight_type input {
   line-height: 20px;
   margin-top: 10px;
 }
-/* line 81, ../../app/stylesheets/partials/_header.scss */
+/* line 91, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights .types {
   margin-left: 10px;
   width: 210px;
   height: 80px;
   float: left;
 }
-/* line 86, ../../app/stylesheets/partials/_header.scss */
+/* line 96, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights .types .direct_flag {
   line-height: 40px;
 }
-/* line 88, ../../app/stylesheets/partials/_header.scss */
+/* line 98, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights .submit_button {
   height: 80px;
   margin-left: 725px;
   border-left: 1px solid #84d5fa;
 }
-/* line 92, ../../app/stylesheets/partials/_header.scss */
+/* line 102, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights .submit_button input[type="submit"] {
   margin: 25px 0 0 50px;
 }
-/* line 93, ../../app/stylesheets/partials/_header.scss */
+/* line 103, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights .schedule {
   width: 425px;
   height: 80px;
@@ -532,12 +548,12 @@ body .removed {
   padding-left: 10px;
   border-right: 1px solid #84d5fa;
 }
-/* line 99, ../../app/stylesheets/partials/_header.scss */
+/* line 109, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights input.city_datepicker {
   background: url(/images/cal.png) no-repeat;
   background-position: 100px 4px;
 }
-/* line 103, ../../app/stylesheets/partials/_header.scss */
+/* line 113, ../../app/stylesheets/partials/_header.scss */
 #container #header .flight_search form#form_search_flights input[type="text"] {
   background-color: #dbf1fe;
   width: 118px;
@@ -624,72 +640,108 @@ body .removed {
 }
 
 /* line 1, ../../app/stylesheets/partials/_widget.scss */
+.ui-tabs-nav {
+  padding: 0;
+}
+
+/* line 2, ../../app/stylesheets/partials/_widget.scss */
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+  border: none;
+  background: none;
+  color: #56cded;
+}
+
+/* line 3, ../../app/stylesheets/partials/_widget.scss */
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+  color: #7f4098;
+}
+
+/* line 5, ../../app/stylesheets/partials/_widget.scss */
 .sider {
   margin-left: 20px;
   margin-top: 5px;
   float: left;
 }
-/* line 5, ../../app/stylesheets/partials/_widget.scss */
+/* line 9, ../../app/stylesheets/partials/_widget.scss */
 .sider .tab_box {
   width: 190px;
   margin-top: 10px;
   margin-bottom: 10px;
   background-color: white;
 }
-/* line 10, ../../app/stylesheets/partials/_widget.scss */
-.sider .tab_box .ui-widget-header {
-  height: 31px;
-  font-size: 1.2em;
+/* line 14, ../../app/stylesheets/partials/_widget.scss */
+.sider .tab_box > ul {
+  background-color: #80c4e5;
 }
-/* line 11, ../../app/stylesheets/partials/_widget.scss */
+/* line 15, ../../app/stylesheets/partials/_widget.scss */
+.sider .tab_box .ui-widget-header {
+  height: 28px;
+  font-size: 1.2em;
+  border: none;
+}
+/* line 16, ../../app/stylesheets/partials/_widget.scss */
 .sider .tab_box .ui-tabs-panel {
   padding: 1em 0 0 0;
   font-size: 1.1em;
 }
-/* line 13, ../../app/stylesheets/partials/_widget.scss */
+/* line 17, ../../app/stylesheets/partials/_widget.scss */
+.sider .tab_box .ui-state-active {
+  border: none;
+  background: none;
+  color: #56cded;
+}
+/* line 18, ../../app/stylesheets/partials/_widget.scss */
+.sider .tab_box .ui-state-active a, .sider .tab_box .ui-state-active a:link, .sider .tab_box .ui-state-active a:visited {
+  color: #7f4098;
+}
+/* line 19, ../../app/stylesheets/partials/_widget.scss */
+.sider .tab_box .ui-tabs .ui-tabs-nav {
+  padding: 0;
+}
+/* line 21, ../../app/stylesheets/partials/_widget.scss */
 .sider .tab_box .tab_box_body .flight_search {
   margin: 10px;
   margin-top: 0px;
   font-size: 1.1em;
 }
-/* line 17, ../../app/stylesheets/partials/_widget.scss */
+/* line 25, ../../app/stylesheets/partials/_widget.scss */
 .sider .tab_box .tab_box_body .flight_search #search_button {
   margin-top: 5px;
 }
-/* line 18, ../../app/stylesheets/partials/_widget.scss */
+/* line 26, ../../app/stylesheets/partials/_widget.scss */
 .sider .tab_box .tab_box_body .flight_search #airline_airline_id {
   width: 100px;
 }
-/* line 19, ../../app/stylesheets/partials/_widget.scss */
+/* line 27, ../../app/stylesheets/partials/_widget.scss */
 .sider .tab_box .tab_box_body .flight_search input.city, .sider .tab_box .tab_box_body .flight_search input.city_datepicker {
   width: 100px;
 }
 
-/* line 21, ../../app/stylesheets/partials/_widget.scss */
+/* line 29, ../../app/stylesheets/partials/_widget.scss */
 .widget_box {
   width: 190px;
   margin-left: 750px;
   margin-top: 20px;
   background-color: white;
 }
-/* line 26, ../../app/stylesheets/partials/_widget.scss */
+/* line 34, ../../app/stylesheets/partials/_widget.scss */
 .widget_box .widget_head {
   height: 24px;
 }
-/* line 28, ../../app/stylesheets/partials/_widget.scss */
+/* line 36, ../../app/stylesheets/partials/_widget.scss */
 .widget_box .widget_head h3 {
   height: 20px;
   font-size: 1.2em;
   padding: 2px;
   padding-left: 10px;
 }
-/* line 33, ../../app/stylesheets/partials/_widget.scss */
+/* line 41, ../../app/stylesheets/partials/_widget.scss */
 .widget_box .widget_body {
   min-height: 80px;
   padding: 4px;
   border: 1px solid #80c4e5;
 }
-/* line 38, ../../app/stylesheets/partials/_widget.scss */
+/* line 46, ../../app/stylesheets/partials/_widget.scss */
 .widget_box .widget_body ul li {
   list-style: none;
   margin-bottom: 2px;
@@ -700,7 +752,7 @@ ul.share {
   padding: 0 10px;
   position: absolute;
   left: 590px;
-  top: 276px;
+  top: 60px;
 }
 /* line 6, ../../app/stylesheets/partials/_share.scss */
 ul.share li {
@@ -791,22 +843,25 @@ ul.share li a:hover {
 
 /* line 1, ../../app/stylesheets/partials/_slides.scss */
 #slides {
-  margin: 15px;
+  margin: 0 15px 15px 15px;
+  border: 1px solid #e6e6e6;
+  background-color: #eaf7ff;
+  float: left;
 }
-/* line 3, ../../app/stylesheets/partials/_slides.scss */
+/* line 6, ../../app/stylesheets/partials/_slides.scss */
 #slides ul.pagination {
   height: 20px;
   margin-top: 5px;
 }
-/* line 6, ../../app/stylesheets/partials/_slides.scss */
+/* line 9, ../../app/stylesheets/partials/_slides.scss */
 #slides ul.pagination li {
   float: left;
 }
-/* line 8, ../../app/stylesheets/partials/_slides.scss */
+/* line 11, ../../app/stylesheets/partials/_slides.scss */
 #slides ul.pagination li.current a {
   color: red;
 }
-/* line 9, ../../app/stylesheets/partials/_slides.scss */
+/* line 12, ../../app/stylesheets/partials/_slides.scss */
 #slides ul.pagination li a {
   text-decoration: none;
   font-weight: bold;
@@ -817,21 +872,21 @@ ul.share li a:hover {
   display: inline-block;
   margin: 0 2px;
 }
-/* line 18, ../../app/stylesheets/partials/_slides.scss */
-#slides .slides_container {
-  width: 428px;
-  height: 170px;
-}
 /* line 21, ../../app/stylesheets/partials/_slides.scss */
+#slides .slides_container {
+  width: 380px;
+  height: 255px;
+}
+/* line 24, ../../app/stylesheets/partials/_slides.scss */
 #slides .slides_container div {
-  width: 428px;
-  height: 170px;
+  width: 380px;
+  height: 255px;
   display: block;
 }
-/* line 25, ../../app/stylesheets/partials/_slides.scss */
+/* line 28, ../../app/stylesheets/partials/_slides.scss */
 #slides .slides_container div img {
-  width: 428px;
-  height: 170px;
+  width: 380px;
+  height: 255px;
 }
 
 /* line 1, ../../app/stylesheets/partials/_partners.scss */
@@ -885,51 +940,297 @@ ul.share li a:hover {
   width: 70px;
 }
 
+/* line 1, ../../app/stylesheets/partials/_vflight.scss */
+.vflight {
+  width: 307px;
+  float: left;
+}
+/* line 4, ../../app/stylesheets/partials/_vflight.scss */
+.vflight .text_input input[type=text] {
+  width: 45px;
+}
+
+/* line 8, ../../app/stylesheets/partials/_vflight.scss */
+#container1, #container2 {
+  width: 300px;
+  height: 184px;
+  background: none;
+  font-size: 12px;
+  border: 0px dashed #ccc;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 9, ../../app/stylesheets/partials/_vflight.scss */
+#container1 div, #container2 div {
+  height: 184px;
+  overflow: hidden;
+}
+
+/* line 10, ../../app/stylesheets/partials/_vflight.scss */
+#container1 div ul, #container2 div ul {
+  list-style: none;
+}
+
+/* line 11, ../../app/stylesheets/partials/_vflight.scss */
+#container1 div li, #container2 div li {
+  padding: 0px 0;
+  float: left;
+  width: 50%;
+}
+
+/* line 12, ../../app/stylesheets/partials/_vflight.scss */
+#container1 div li.selected, #container2 div li.selected {
+  float: right;
+}
+
+/* line 13, ../../app/stylesheets/partials/_vflight.scss */
+#container1 div li.selected a:link, #container1 div li.selected a:visited, #container2 div li.selected a:link, #container2 div li.selected a:visited {
+  color: #c00;
+}
+
+/* line 14, ../../app/stylesheets/partials/_vflight.scss */
+#container1 div li u, #container2 div li u {
+  width: 300px;
+  text-decoration: none;
+  line-height: 150%;
+  height: 112px;
+  border: 0;
+  float: left;
+  margin-top: 6px;
+}
+
+/* line 15, ../../app/stylesheets/partials/_vflight.scss */
+#container1 div a:link, .container1 div a:visited, #container2 div a:link, .container2 div a:visited {
+  color: #009;
+  text-decoration: none;
+}
+
+/* line 16, ../../app/stylesheets/partials/_vflight.scss */
+#container1 div a:hover, #container2 div a:hover {
+  color: #c00;
+  text-decoration: none;
+}
+
+/* line 18, ../../app/stylesheets/partials/_vflight.scss */
+.tab {
+  clear: both;
+  margin-top: 6px;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 19, ../../app/stylesheets/partials/_vflight.scss */
+.tab tr {
+  border: 0;
+}
+
+/* line 20, ../../app/stylesheets/partials/_vflight.scss */
+.tab td {
+  padding: 0px;
+  border: 0;
+  color: #000;
+}
+
+/* line 22, ../../app/stylesheets/partials/_vflight.scss */
+.hbdt_top {
+  font-size: 12px;
+  margin-top: 0px;
+  color: #fff;
+  font-weight: 800;
+  padding: 0 2px 6px 20px;
+}
+
+/* line 23, ../../app/stylesheets/partials/_vflight.scss */
+.title {
+  color: #fff;
+  clear: both;
+  font-size: 12px;
+  padding: 11px 0px 0px 2px;
+  margin: 0px;
+}
+
+/* line 24, ../../app/stylesheets/partials/_vflight.scss */
+.title ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 25, ../../app/stylesheets/partials/_vflight.scss */
+.title li {
+  list-style: none;
+  line-height: 130%;
+  overflow: hidden;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* line 26, ../../app/stylesheets/partials/_vflight.scss */
+.title span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  float: left;
+}
+
+/* line 27, ../../app/stylesheets/partials/_vflight.scss */
+.title span {
+  width: 48px;
+  text-align: center;
+}
+
+/* line 29, ../../app/stylesheets/partials/_vflight.scss */
+.hbdt {
+  color: #fff;
+  padding-left: 5px;
+  clear: both;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* line 30, ../../app/stylesheets/partials/_vflight.scss */
+.hbdt ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 31, ../../app/stylesheets/partials/_vflight.scss */
+.hbdt li {
+  list-style: none;
+  color: #fff;
+  margin: 0px;
+  padding: 0px;
+  line-height: 23px;
+}
+
+/* line 32, ../../app/stylesheets/partials/_vflight.scss */
+.hbdt span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  float: left;
+}
+
+/* line 33, ../../app/stylesheets/partials/_vflight.scss */
+.hbdt span {
+  width: 48px;
+  text-align: center;
+}
+
+/* line 34, ../../app/stylesheets/partials/_vflight.scss */
+.style1 {
+  color: #f90;
+}
+
+/* line 37, ../../app/stylesheets/partials/_vflight.scss */
+.text_input {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 7px;
+}
+
+/* line 38, ../../app/stylesheets/partials/_vflight.scss */
+.text {
+  background: #eee;
+  border: 1px solid #c90;
+  color: #000;
+  height: 18px;
+}
+
+/* line 39, ../../app/stylesheets/partials/_vflight.scss */
+.text1 {
+  height: 15px;
+}
+
+/* line 40, ../../app/stylesheets/partials/_vflight.scss */
+.soti01 {
+  color: #f90;
+}
+
+/* line 42, ../../app/stylesheets/partials/_vflight.scss */
+.menhead {
+  background: #fff;
+}
+
 /* line 11, ../../app/stylesheets/screen.scss */
+.gonggao {
+  float: left;
+  width: 380px;
+  margin-left: 15px;
+}
+/* line 13, ../../app/stylesheets/screen.scss */
+.gonggao .ui-widget {
+  font-size: 1.0em;
+}
+
+/* line 14, ../../app/stylesheets/screen.scss */
+.travel {
+  float: left;
+  width: 307px;
+  margin-left: 15px;
+}
+/* line 16, ../../app/stylesheets/screen.scss */
+.travel .ui-widget {
+  font-size: 1.0em;
+}
+
+/* line 17, ../../app/stylesheets/screen.scss */
+.tickets {
+  float: left;
+  width: 702px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+/* line 19, ../../app/stylesheets/screen.scss */
+.tickets .ui-widget {
+  font-size: 1.0em;
+}
+
+/* line 21, ../../app/stylesheets/screen.scss */
 .ui-widget {
   font-family: "Helvetica Neve", Helvetica, Tahoma, Arial, Verdana, "Hiragino Sans GB", sans-serif;
   font-size: 0.9em;
 }
 
-/* line 14, ../../app/stylesheets/screen.scss */
+/* line 24, ../../app/stylesheets/screen.scss */
 #global_loading {
   overflow: hidden;
   text-align: center;
 }
 
-/* line 18, ../../app/stylesheets/screen.scss */
+/* line 28, ../../app/stylesheets/screen.scss */
 .flight_date p {
   margin: 0;
 }
 
-/* line 19, ../../app/stylesheets/screen.scss */
+/* line 29, ../../app/stylesheets/screen.scss */
 ul li {
   list-style: none;
 }
 
-/* line 20, ../../app/stylesheets/screen.scss */
+/* line 30, ../../app/stylesheets/screen.scss */
 .ui-accordion .ui-accordion-header a {
   font-size: 1.3em;
 }
 
-/* line 21, ../../app/stylesheets/screen.scss */
+/* line 31, ../../app/stylesheets/screen.scss */
 .ui-accordion .ui-accordion-content {
   font-size: 1.2em;
 }
 
-/* line 23, ../../app/stylesheets/screen.scss */
+/* line 33, ../../app/stylesheets/screen.scss */
 h3 {
   font-family: "Helvetica Neve", Helvetica, Tahoma, Arial, Verdana, "Hiragino Sans GB", sans-serif;
   font-weight: bold;
   font-size: 1.2em;
 }
 
-/* line 28, ../../app/stylesheets/screen.scss */
+/* line 38, ../../app/stylesheets/screen.scss */
 body {
   background: url(/images/united_blue_bg_754px.jpg) no-repeat;
   background-color: #a0c4de;
 }
-/* line 31, ../../app/stylesheets/screen.scss */
+/* line 41, ../../app/stylesheets/screen.scss */
 body #top.fixed {
   position: absolute;
   left: 0;
@@ -939,7 +1240,7 @@ body #top.fixed {
   z-index: -1;
 }
 
-/* line 44, ../../app/stylesheets/screen.scss */
+/* line 54, ../../app/stylesheets/screen.scss */
 #container {
   width: 960px;
   margin: 0 auto;
@@ -954,21 +1255,21 @@ body #top.fixed {
   width: 970px	9;
   background: url(/images/inset_layout.png) repeat-y;
 }
-/* line 54, ../../app/stylesheets/screen.scss */
+/* line 64, ../../app/stylesheets/screen.scss */
 #container #main {
   float: left;
   width: 958px;
   padding-top: 10px;
 }
 
-/* line 59, ../../app/stylesheets/screen.scss */
+/* line 69, ../../app/stylesheets/screen.scss */
 #content {
   float: left;
   width: 735px;
   min-height: 550px;
   background-position: 40px 30px;
 }
-/* line 64, ../../app/stylesheets/screen.scss */
+/* line 74, ../../app/stylesheets/screen.scss */
 #content .swf_adv {
   padding: 5px 4px 4px 5px;
   width: 685px;
@@ -976,70 +1277,70 @@ body #top.fixed {
   border: 2px solid #84d5fa;
 }
 
-/* line 72, ../../app/stylesheets/screen.scss */
+/* line 81, ../../app/stylesheets/screen.scss */
 .search_result {
   width: 700px;
   margin: 15px 20px;
 }
-/* line 75, ../../app/stylesheets/screen.scss */
+/* line 84, ../../app/stylesheets/screen.scss */
 .search_result #dto_header h3 {
   font-weight: bold;
   margin-left: 10px;
 }
-/* line 76, ../../app/stylesheets/screen.scss */
+/* line 85, ../../app/stylesheets/screen.scss */
 .search_result .simple_table {
   clear: left;
   margin: 5px 10px 10px 0;
 }
-/* line 79, ../../app/stylesheets/screen.scss */
+/* line 88, ../../app/stylesheets/screen.scss */
 .search_result .simple_table.ui-widget {
   font-size: 1.0em;
 }
-/* line 80, ../../app/stylesheets/screen.scss */
+/* line 89, ../../app/stylesheets/screen.scss */
 .search_result .simple_table .header {
   background-color: #f5f5f5;
 }
-/* line 81, ../../app/stylesheets/screen.scss */
+/* line 90, ../../app/stylesheets/screen.scss */
 .search_result .simple_table tr.detail_flight td {
   background-color: #eaf7ff;
   color: #a3620a;
 }
-/* line 84, ../../app/stylesheets/screen.scss */
+/* line 93, ../../app/stylesheets/screen.scss */
 .search_result .simple_table tr.detail_flight td ul li {
   float: left;
   margin: 0 10px;
   list-style-type: none;
 }
-/* line 86, ../../app/stylesheets/screen.scss */
+/* line 95, ../../app/stylesheets/screen.scss */
 .search_result .simple_table td.airline {
   width: 100px;
 }
-/* line 87, ../../app/stylesheets/screen.scss */
+/* line 96, ../../app/stylesheets/screen.scss */
 .search_result .simple_table td.airport {
   width: 100px;
 }
-/* line 89, ../../app/stylesheets/screen.scss */
+/* line 98, ../../app/stylesheets/screen.scss */
 .search_result .simple_table td span.price {
   color: #a3620a;
   font-weight: bold;
 }
-/* line 90, ../../app/stylesheets/screen.scss */
+/* line 99, ../../app/stylesheets/screen.scss */
 .search_result .simple_table td span.discount {
   color: #8fc644;
 }
 
-/* line 92, ../../app/stylesheets/screen.scss */
+/* line 101, ../../app/stylesheets/screen.scss */
 #cities_tabs {
   width: 320px;
   height: 200px;
   clear: left;
 }
-/* line 96, ../../app/stylesheets/screen.scss */
+/* line 105, ../../app/stylesheets/screen.scss */
 #cities_tabs .city_selects {
   padding: 0;
   margin: 0;
 }
-/* line 99, ../../app/stylesheets/screen.scss */
+/* line 108, ../../app/stylesheets/screen.scss */
 #cities_tabs .city_selects .city_select {
   cursor: pointer;
   float: left;
@@ -1049,11 +1350,11 @@ body #top.fixed {
   width: 50px;
 }
 
-/* line 107, ../../app/stylesheets/screen.scss */
+/* line 116, ../../app/stylesheets/screen.scss */
 .flight_dates {
   height: 55px;
 }
-/* line 109, ../../app/stylesheets/screen.scss */
+/* line 118, ../../app/stylesheets/screen.scss */
 .flight_dates .flight_date {
   float: left;
   padding: 0 22px;
@@ -1062,27 +1363,27 @@ body #top.fixed {
   cursor: pointer;
   border: 1px solid #80c4e5;
 }
-/* line 116, ../../app/stylesheets/screen.scss */
+/* line 125, ../../app/stylesheets/screen.scss */
 .flight_dates .flight_date:hover {
   background-color: #a8dcfb;
 }
-/* line 117, ../../app/stylesheets/screen.scss */
+/* line 126, ../../app/stylesheets/screen.scss */
 .flight_dates .flight_date.current {
   background-color: #80c4e5;
   border-bottom: none;
 }
-/* line 120, ../../app/stylesheets/screen.scss */
+/* line 129, ../../app/stylesheets/screen.scss */
 .flight_dates .flight_date p.year {
   visibility: hidden;
   height: 0px;
 }
-/* line 121, ../../app/stylesheets/screen.scss */
+/* line 130, ../../app/stylesheets/screen.scss */
 .flight_dates .flight_date p.lowest_price {
   float: left;
   width: 34px;
   font-weight: bold;
 }
-/* line 125, ../../app/stylesheets/screen.scss */
+/* line 134, ../../app/stylesheets/screen.scss */
 .flight_dates .flight_date div.discount_existed {
   background: url(/images/lowPrice.gif);
   width: 15px;
@@ -1090,12 +1391,12 @@ body #top.fixed {
   margin-left: 35px;
 }
 
-/* line 131, ../../app/stylesheets/screen.scss */
+/* line 140, ../../app/stylesheets/screen.scss */
 .clearfix {
   clear: both;
 }
 
-/* line 132, ../../app/stylesheets/screen.scss */
+/* line 141, ../../app/stylesheets/screen.scss */
 .meta {
   color: #a0a0a0;
 }

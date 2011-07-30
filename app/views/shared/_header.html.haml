@@ -3,17 +3,24 @@
     ~ link_to(image_tag("http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0027_Simplified Chinese.jpg"), "http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode")
 #header
   .top_header
-    .logo_l
-    .logo_r
+    /.logo_l
+    /.logo_r
     .title_header
-      %h3
+      .logo
+        ~ image_tag "zi-logo.png"
       .phone
         .tel
         .number~ "(028) 87063333 / 85063333 / 85065511"
   .mid_nav
-    ~ link_to "主页",    help_url(:cat => 'intro'),  :class => 'intro help',   :remote => true
-    ~ link_to "乘坐飞机常识", help_url(:cat => 'general'), :class => 'general help', :remote => true
-    ~ link_to "售中服务",   help_url(:cat => 'service'), :class => 'service help', :remote => true
-    ~ link_to "电子票",    help_url(:cat => 'ticket'),  :class => 'ticket help',  :remote => true
+    ~ link_to "主页",    root_url
+    ~ link_to "乘坐飞机常识", help_url(:cat => 'general'), :class => 'general', :remote => true
+    ~ link_to "售中服务",   help_url(:cat => 'service'), :class => 'service', :remote => true
+    ~ link_to "电子票",    help_url(:cat => 'ticket'),  :class => 'ticket',  :remote => true
+    ~ link_to "酒店预订",   '#'
+    ~ link_to "汽车出租",   '#'
+    ~ link_to "旅游度假",   '#'
+    ~ link_to "会员中心",   '#'
+    ~ link_to "分销平台",   '#'
+    ~ link_to "关于我们",    help_url,  :class => 'about',  :remote => true
 .clearfix
   
